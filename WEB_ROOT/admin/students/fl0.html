@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Foundational Learnings</title>
+<!-- required scripts -->
+ ~[wc:commonscripts]
+<!-- Required style sheets: screen.css, and print.css -->
+ <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+ <link href="/images/css/print.css" rel="stylesheet" media="print">
+ <link href="/images/css/fls.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+ ~[wc:admin_header_frame_css]
+ <!-- breadcrumb start -->
+ <a href="/admin/home.html" target="_top">Start Page</a> &gt; <a href="/admin/students/home.html?selectstudent=nosearch" target="_top">Student Selection</a> &gt; Foundational Learnings
+ <!-- breadcrumb end -->
+~[wc:admin_navigation_frame_css]
+<!-- start of main menu and content -->
+~[wc:title_student_begin_css]Foundational Learnings~[wc:title_student_end_css]
+<form action="/~[self.page]?frn=~(studentfrn)&changesSaved=true" method="POST">
+<!-- start of content area -->
+~[if.gpv.changesSaved=true]<div class="feedback-confirm">~[text:psx.common.changes_recorded]</div>[/if]
+
+<div class="button-row"><input type="hidden" name="ac" value="prim">~[submitbutton]</div>
+
+</form>
+
+<!-- end of content area -->
+ ~[wc:admin_footer_frame_css]
+</body>
+</html>

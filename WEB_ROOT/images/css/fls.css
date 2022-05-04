@@ -1,0 +1,23 @@
+/* Tooltip container */
+.f-label {
+}
+
+/* Tooltip text */
+.fl-label .tooltiptext {
+ visibility: hidden;
+ width: 300px;
+ background-color: black;
+ color: #fff;
+ text-align: left;
+ padding: 5px;
+ border-radius: 6px;
+
+ /* Position the tooltip text - see examples below! */
+ position: absolute;
+ z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.fl-label:hover .tooltiptext {
+ visibility: visible;
+}

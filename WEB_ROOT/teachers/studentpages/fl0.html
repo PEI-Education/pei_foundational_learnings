@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!--NoLink-->
+<!-- PowerTeacher Student Profile Page By Luke Walker and Frank Dow -->
+<html>
+
+<head>
+  <title>Foundational Learnings</title>
+  ~[wc:commonscripts]
+  <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+  <link href="/images/css/print.css" rel="stylesheet" media="print">
+  <link href="/images/css/fls.css" rel="stylesheet">
+  <script>
+    function formHandler(form) {
+      var URL =
+        document.navigation.page.options[document.navigation.page.selectedIndex]
+        .value;
+      window.location.href = URL;
+    }
+
+    $j(document).ready(function() {
+      $j(".fl_teacher").each(function() {
+        if ($j(this).val().length === 0) {
+          $j(this).val("~[x:username]");
+        }
+      });
+
+      $j(".fl_school").each(function() {
+        if ($j(this).val().length === 0) {
+          $j(this).val("~(schoolname)");
+        }
+      });
+
+      $j(".fl_year").each(function() {
+        if ($j(this).val().length === 0) {
+          $j(this).val("~(yearname)");
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  ~[wc:teachers_header_fr_css]
+
+
+  <form name="navigation"><span class="account-photo">~[studenttitlephoto]</span>
+    <h1>Foundational Learnings<span class="nav-teacher"><select name="page" size="1" onchange="javascript:formHandler()">
+          <option value="">Select Screens
+          <option value="">--------------------~[x:teacherpages]
+        </select></span>~[studentalert]</h1>
+    <p>~(studentname) &nbsp; ~(grade_level) &nbsp; ~(student_number) &nbsp; &nbsp; ~(track) &nbsp; &nbsp; ~(studschoolabbr) &nbsp; &nbsp; ~[enrollmentstatus]</p>
+  </form>
+
+  ~[if#cslfCheck.~(curschoolid)>500]
+  This page is not used in CSLF schools.
+  [else#cslfCheck]
+
+  <ul class="tabs">
+    <li class="selected"><a href="fl0.html?frn=~(studentfrn)">K</a></li>
+    <li><a href="fl1.html?frn=~(studentfrn)">1</a></li>
+    <li><a href="fl2.html?frn=~(studentfrn)">2</a></li>
+    <li><a href="fl3.html?frn=~(studentfrn)">3</a></li>
+    <li><a href="fl4.html?frn=~(studentfrn)">4</a></li>
+    <li><a href="fl5.html?frn=~(studentfrn)">5</a></li>
+    <li><a href="fl6.html?frn=~(studentfrn)">6</a></li>
+    <li><a href="fl7.html?frn=~(studentfrn)">7</a></li>
+    <li><a href="fl8.html?frn=~(studentfrn)">8</a></li>
+    <li><a href="fl9.html?frn=~(studentfrn)">9</a></li>
+  </ul>
+
+  ~[if.~(gpv.changesSaved)=true]<div class="feedback-confirm">~[text:psx.common.changes_recorded]</div>[/if]
+
+  <form class="fl_form" action="/teachers/studentpages/fl0.html?frn=~(studentfrn)&changesSaved=true" method="POST">
+    <h2>Mathematics</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">K.1.1
+            <span class="tooltiptext">Count in a variety of ways.
+            </span>
+          </td>
+          <td>
+            ~[if.~([Students.U_PEI_FL]Math_K_11)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_11)
+            [else]
+            <select name="[Students.U_PEI_FL]Math_K_11" id="selectMath_K_11">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_11))]</select>
+            [/if]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K.1.2
+            <span class="tooltiptext">
+              Explore a variety of physical representations of numbers 1 to 10.
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_K_12)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_12)
+            [else#Y]
+            <select name="[Students.U_PEI_FL]Math_K_12" id="selectMath_K_12">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_12))]</select>
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K.1.3
+            <span class="tooltiptext">
+              Count to determine the number in a group (0 to 10).
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_K_13)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_13)
+            [else#Y]
+            <select name="[Students.U_PEI_FL]Math_K_13" id="selectMath_K_13">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_13))]</select>
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K.1.4
+            <span class="tooltiptext">Create sets of a given number (0 to 10).
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_K_14)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_14)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]Math_K_14" id="selectMath_K_14">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_14))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K.1.5
+            <span class="tooltiptext">
+              Show a given number as two parts concretely and name the two parts (2 to 10).
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_K_15)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_15)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]Math_K_15" id="selectMath_K_15">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_15))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K.1.6
+            <span class="tooltiptext">
+              Determine which group has more, which group has less, or which are equivalent.
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_K_16)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_16)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]Math_K_16" id="selectMath_K_16">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_16))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K.1.7
+            <span class="tooltiptext">
+              Use symbols to represent numbers in a variety of meaningful contexts.
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_K_17)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_17)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]Math_K_17" id="selectMath_K_17">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_17))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K.2.1
+            <span class="tooltiptext">
+              Demonstrate an understanding of repeating patterns (two or three elements) by identifying, describing, copying, extending, and creating patterns.
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_K_21)$"Y"]
+            ~([Students.U_PEI_FL]Math_K_21)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]Math_K_21" id="selectMath_K_21">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_K_21))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        ~[if#chkGrade.~([Students]grade_level)=0]
+        <tr>
+          <td class="fl-label">K Comment:</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]MATH_K_COMMENT" id="textareaMath_K_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]MATH_K_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_K_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]MATH_K_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_K_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]MATH_K_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_K_YEAR" class="fl_year" value="~([Students.U_PEI_FL]MATH_K_YEAR)">
+          </td>
+        </tr>
+        [else#chkGrade]
+        <tr>
+          <td class="fl-label">K Comment:</td>
+          <td>
+            ~([Students.U_PEI_FL]MATH_K_COMMENT)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Teacher:</td>
+          <td>
+            ~([Students.U_PEI_FL]MATH_K_TEACHER)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K School:</td>
+          <td>
+            ~([Students.U_PEI_FL]MATH_K_SCHOOL)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Year:</td>
+          <td>
+            ~([Students.U_PEI_FL]MATH_K_YEAR)
+          </td>
+        </tr>
+        [/if#chkGrade]
+      </table>
+
+    </div>
+    <h2>English Language Arts</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">
+            K-SL1.1
+            <span class="tooltiptext">Express feelings and opinions and describe personal experiences and interests</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_SL11)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_SL11)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_SL11" id="selectELA_K_SL11">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_SL11))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-SL1.4
+            <span class="tooltiptext">Follow and give directions in different contexts</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_SL14)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_SL14)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_SL14" id="selectELA_K_SL14">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_SL14))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-SL2.1
+            <span class="tooltiptext">Identify how many words are in a spoken sentence</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_SL21)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_SL21)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_SL21" id="selectELA_K_SL21">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_SL21))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-SL2.2
+            <span class="tooltiptext">Begin to segment and blend words into syllables</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_SL22)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_SL22)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_SL22" id="selectELA_K_SL22">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_SL22))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-SL2.3
+            <span class="tooltiptext">Recognize and produce rhyming words in oral language</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_SL23)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_SL23)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_SL23" id="selectELA_K_SL23">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_SL23))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-SL2.4
+            <span class="tooltiptext">Recognize beginning and final phonemes (sounds) in oral language</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_SL24)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_SL24)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_SL24" id="selectELA_K_SL24">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_SL24))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+
+        <tr>
+          <td class="fl-label">K-RS1
+            <span class="tooltiptext">Begin to monitor reading by using one-to-one matching of voice to print; notice when meaning or language does not fit</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_RS1)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_RS1)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_RS1" id="selectELA_K_RS1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_RS1))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-WS5
+            <span class="tooltiptext">Use sound symbol knowledge to write unknown words</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_WS5)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_WS5)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_WS5" id="selectELA_K_WS5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_WS5))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+
+        <tr>
+          <td class="fl-label">K-WTI2
+            <span class="tooltiptext">Understand that written words record ideas (usually personal experiences or feelings) and remain constant from one reading to another</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_WTI2)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_WTI2)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_WTI2" id="selectELA_K_WTI2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_WTI2))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-WTC4
+            <span class="tooltiptext">Demonstrate left-toright and top-to-bottom directionality</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_WTC4)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_WTC4)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_WTC4" id="selectELA_K_WTC4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_WTC4))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-II3
+            <span class="tooltiptext">Use some language from texts in personal context (e.g., join in chants, rhymes; use “storybook” words or phrases)</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_K_II3)$"Y"]
+            ~([Students.U_PEI_FL]ELA_K_II3)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_K_II3" id="selectELA_K_II3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_K_II3))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        ~[if#chkGrade.~([Students]grade_level)=0]
+        <tr>
+          <td class="fl-label">K Comment:</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]ELA_K_COMMENT" id="textareaELA_K_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]ELA_K_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_K_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]ELA_K_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_K_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]ELA_K_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_K_YEAR" class="fl_year" value="~([Students.U_PEI_FL]ELA_K_YEAR)">
+          </td>
+        </tr>
+        [else#chkGrade]
+        <tr>
+          <td class="fl-label">K Comment:</td>
+          <td>
+            ~([Students.U_PEI_FL]ELA_K_COMMENT)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Teacher:</td>
+          <td>
+            ~([Students.U_PEI_FL]ELA_K_TEACHER)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K School:</td>
+          <td>
+            ~([Students.U_PEI_FL]ELA_K_SCHOOL)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Year:</td>
+          <td>
+            ~([Students.U_PEI_FL]ELA_K_YEAR)
+          </td>
+        </tr>
+        [/if#chkGrade]
+      </table>
+
+    </div>
+
+    <h2>French Language Arts</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+
+        <tr>
+          <td class="fl-label">K-2.1<span class="tooltiptext">Démontrer sa compréhension littérale du message contenu dans différents types de textes oraux simples</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_21)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_21)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_21" id="selectFLA_K_21">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_21))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+
+        <tr>
+          <td class="fl-label">K-3.1<span class="tooltiptext">S’exprimer en employant des phrases simples</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_31)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_31)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_31" id="selectFLA_K_31">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_31))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+
+        <tr>
+          <td class="fl-label">K-4.1<span class="tooltiptext">Distinguer les mots, les syllabes, les phonèmes et les rimes</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_41)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_41)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_41" id="selectFLA_K_41">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_41))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+
+        <tr>
+          <td class="fl-label">K-5.1<span class="tooltiptext">Démontrer une compréhension des concepts de l’écrit
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_51)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_51)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_51" id="selectFLA_K_51">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_51))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-6.2<span class="tooltiptext">Appliquer des actions stratégiques pour gérer sa lecture
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_62)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_62)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_62" id="selectFLA_K_62">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_62))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-7.1<span class="tooltiptext">Démontrer sa compréhension littérale du message contenu dans différents genres de textes simples
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_71)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_71)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_71" id="selectFLA_K_71">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_71))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+
+        <tr>
+          <td class="fl-label">K-9.1<span class="tooltiptext">Développer quelques compétences simples liées aux traits d’écriture pour créer de courts textes</span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_91)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_91)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_91" id="selectFLA_K_91">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_91))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+
+        ~[if#chkGrade.~([Students]grade_level)=0]
+        <tr>
+          <td class="fl-label">K Comment:</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]FLA_K_COMMENT" id="textareaFLA_K_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]FLA_K_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_K_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]FLA_K_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_K_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]FLA_K_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_K_YEAR" class="fl_year" value="~([Students.U_PEI_FL]FLA_K_YEAR)">
+          </td>
+        </tr>
+
+        [else#chkGrade]
+        <tr>
+          <td class="fl-label">K Comment:</td>
+          <td>
+            ~([Students.U_PEI_FL]FLA_K_COMMENT)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Teacher:</td>
+          <td>
+            ~([Students.U_PEI_FL]FLA_K_TEACHER)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K School:</td>
+          <td>
+            ~([Students.U_PEI_FL]FLA_K_SCHOOL)
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K Year:</td>
+          <td>
+            ~([Students.U_PEI_FL]FLA_K_YEAR)
+          </td>
+        </tr>
+        [/if#chkGrade]
+        <tr>
+          <td><strong>No longer in use:</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-9.2<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_92)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_92)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_92" id="selectFLA_K_92">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_92))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-7.2<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_72)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_72)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_72" id="selectFLA_K_72">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_72))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-4.3<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_43)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_43)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_43" id="selectFLA_K_43">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_43))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-4.8<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_48)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_48)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_48" id="selectFLA_K_48">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_48))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-3.10<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_310)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_310)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_310" id="selectFLA_K_310">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_310))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-3.3<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_33)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_33)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_33" id="selectFLA_K_33">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_33))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-1.5<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_15)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_15)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_15" id="selectFLA_K_15">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_15))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-2.2<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_22)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_22)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_22" id="selectFLA_K_22">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_22))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-2.3<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_23)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_23)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_23" id="selectFLA_K_23">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_23))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">K-2.4<span class="tooltiptext"></span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_24)$"Y"]
+            ~([Students.U_PEI_FL]FLA_K_24)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]FLA_K_24" id="selectFLA_K_24">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_24))]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="button-row"><input type="hidden" name="frn" value="~(studentfrn)">
+      <input type="hidden" name="ac" value="webasmt">~[submitbutton]
+    </div>
+  </form>
+  [/if#cslfCheck]
+  <br>
+
+  <!-- end of content of bounding box -->
+
+  ~[wc:teachers_footer_fr_css]
+
+</body>
+
+</html>

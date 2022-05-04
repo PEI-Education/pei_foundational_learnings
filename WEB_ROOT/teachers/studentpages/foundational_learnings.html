@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- PowerTeacher Student Profile Page By Luke Walker and Frank Dow -->
+<html>
+
+<head>
+  ~[if.~(grade_level)>9]
+    <meta http-equiv="refresh" content="0; url='fl9.html?frn=~(studentfrn)" />
+  [else]
+    <meta http-equiv="refresh" content="0; url='fl~(grade_level).html?frn=~(studentfrn)" />
+  [/if]
+  <title>~[text:psx.htmlc.teachers.studentpages.foundational_learnings.foundational_learnings]</title>
+  ~[wc:commonscripts]
+  <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+  <link href="/images/css/print.css" rel="stylesheet" media="print">
+  <link href="/images/css/fls.css" rel="stylesheet">
+  <script>
+    function formHandler(form) {
+      var URL = document.navigation.page.options[document.navigation.page.selectedIndex].value;
+      window.location.href = URL;
+      console.log(window.location.href);
+    }
+
+
+  </script>
+
+</head>
+
+<body>
+
+  ~[wc:teachers_header_fr_css]
+
+
+  <form name="navigation"><span class="account-photo">~[studenttitlephoto]</span>
+    <h1>Foundational Learnings<span class="nav-teacher"><select name="page" size="1" onchange="javascript:formHandler()">
+          <option value="">Select Screens
+          <option value="">--------------------~[x:teacherpages]
+        </select></span>~[studentalert]</h1>
+    <p>~(studentname) &nbsp; ~(grade_level) &nbsp; ~(student_number) &nbsp; &nbsp; ~(track) &nbsp; &nbsp; ~(studschoolabbr) &nbsp; &nbsp; ~[enrollmentstatus]</p>
+  </form>
+
+  ~[if#cslfCheck.~(curschoolid)>500]
+  This page is not used in CSLF schools.
+  [else#cslfCheck]
+
+  <input type="hidden" id="grade" value="~(grade_level)">
+
+  <ul class="tabs">
+    <li><a href="fl0.html?frn=~(studentfrn)">K</a></li>
+    <li><a href="fl1.html?frn=~(studentfrn)">1</a></li>
+    <li><a href="fl2.html?frn=~(studentfrn)">2</a></li>
+    <li><a href="fl3.html?frn=~(studentfrn)">3</a></li>
+    <li><a href="fl4.html?frn=~(studentfrn)">4</a></li>
+    <li><a href="fl5.html?frn=~(studentfrn)">5</a></li>
+    <li><a href="fl6.html?frn=~(studentfrn)">6</a></li>
+    <li><a href="fl7.html?frn=~(studentfrn)">7</a></li>
+    <li><a href="fl8.html?frn=~(studentfrn)">8</a></li>
+    <li><a href="fl9.html?frn=~(studentfrn)">9</a></li>
+  </ul>
+  <p>Redirecting you to the student's current grade level. If you are not redirected within a few seconds, click the appropriate tab above.</p>
+  <!-- end of content of bounding box -->
+  [/if#cslfCheck]
+
+  ~[wc:teachers_footer_fr_css]
+
+</body>
+
+</html>
