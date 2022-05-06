@@ -1,0 +1,574 @@
+Kindergarten:
+
+<tr>
+  <td><strong>No longer in use:</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td class="fl-label">K 9.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_92)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_92)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_92" id="selectFLA_K_92">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_92))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 7.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_72)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_72)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_72" id="selectFLA_K_72">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_72))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 4.3<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_43)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_43)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_43" id="selectFLA_K_43">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_43))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 4.8<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_48)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_48)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_48" id="selectFLA_K_48">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_48))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 3.10<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_310)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_310)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_310" id="selectFLA_K_310">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_310))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 3.3<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_33)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_33)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_33" id="selectFLA_K_33">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_33))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 1.5<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_15)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_15)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_15" id="selectFLA_K_15">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_15))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 2.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_22)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_22)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_22" id="selectFLA_K_22">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_22))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 2.3<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_23)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_23)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_23" id="selectFLA_K_23">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_23))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">K 2.4<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_K_24)$"Y"]
+    ~([Students.U_PEI_FL]FLA_K_24)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_K_24" id="selectFLA_K_24">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_K_24))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+
+
+**Grade 1**
+<tr>
+  <td><strong>No longer in use:</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td class="fl-label">1 L.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_1_L2)$"Y"]
+    ~([Students.U_PEI_FL]FLA_1_L2)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_1_L2" id="selectFLA_1_L2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_L2))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">1 L.3<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_1_L3)$"Y"]
+    ~([Students.U_PEI_FL]FLA_1_L3)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_1_L3" id="selectFLA_1_L3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_L3))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">1 10.2.<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_1_1021)$"Y"]
+    ~([Students.U_PEI_FL]FLA_1_1021)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_1_1021" id="selectFLA_1_1021">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_1021))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">1 9.1.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_1_912)$"Y"]
+    ~([Students.U_PEI_FL]FLA_1_912)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_1_912" id="selectFLA_1_912">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_912))]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+
+
+**Grade 2**
+<tr>
+  <td><strong>No longer in use:</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td class="fl-label">2 10.2.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_2_1021)$"Y"]
+    ~([Students.U_PEI_FL]FLA_2_1021)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_2_1021" id="selectFLA_2_1021">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_1021)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">2 10.4.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_2_1042)$"Y"]
+    ~([Students.U_PEI_FL]FLA_2_1042)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_2_1042" id="selectFLA_2_1042">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_1042)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">2 9.1.5<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_2_915)$"Y"]
+    ~([Students.U_PEI_FL]FLA_2_915)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_2_915" id="selectFLA_2_915">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_915)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+
+**Gr 3**
+<tr>
+  <td><strong>No longer in use:</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td class="fl-label">3 10.2.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_3_1021)$"Y"]
+    ~([Students.U_PEI_FL]FLA_3_1021)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_3_1021" id="selectFLA_3_1021">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_3_1021)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">3 10.4.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_3_1042)$"Y"]
+    ~([Students.U_PEI_FL]FLA_3_1042)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_3_1042" id="selectFLA_3_1042">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_3_1042)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">3 7.3.2<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_3_732)$"Y"]
+    ~([Students.U_PEI_FL]FLA_3_732)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_3_732" id="selectFLA_3_732">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_3_732)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">3 9.1.4<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_3_914)$"Y"]
+    ~([Students.U_PEI_FL]FLA_3_914)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_3_914" id="selectFLA_3_914">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_3_914)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">3 9.3.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_3_931)$"Y"]
+    ~([Students.U_PEI_FL]FLA_3_931)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_3_931" id="selectFLA_3_931">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_3_931)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+
+
+**Grade 4**
+<tr>
+  <td><strong>No longer in use:</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td class="fl-label">4 10.3.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_4_1031)$"Y"]
+    ~([Students.U_PEI_FL]FLA_4_1031)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_4_1031" id="selectFLA_4_1031">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_4_1031)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">4 3.0<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_4_30)$"Y"]
+    ~([Students.U_PEI_FL]FLA_4_30)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_4_30" id="selectFLA_4_30">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_4_30)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">4 5.0<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_4_50)$"Y"]
+    ~([Students.U_PEI_FL]FLA_4_50)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_4_50" id="selectFLA_4_50">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_4_50)]</select>
+
+    [/if#Y]
+  </td>
+  </tr>
+<tr>
+  <td class="fl-label">4 7.1.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_4_711)$"Y"]
+    ~([Students.U_PEI_FL]FLA_4_711)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_4_711" id="selectFLA_4_711">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_4_711)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">4 8.2.4<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_4_824)$"Y"]
+    ~([Students.U_PEI_FL]FLA_4_824)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_4_824" id="selectFLA_4_824">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_4_824)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">4 8.2.9<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_4_829)$"Y"]
+    ~([Students.U_PEI_FL]FLA_4_829)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_4_829" id="selectFLA_4_829">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_4_829)]</select>
+
+    [/if#Y]
+    </td>
+</tr>
+<tr>
+  <td class="fl-label">4 9.2.4<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_4_924)$"Y"]
+    ~([Students.U_PEI_FL]FLA_4_924)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_4_924" id="selectFLA_4_924">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_4_924)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+
+
+**Gr 5**
+<tr>
+  <td><strong>No longer in use:</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td class="fl-label">5 10.3.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_1031)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_1031)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_1031" id="selectFLA_5_1031">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_1031)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">5 3.0<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_30)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_30)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_30" id="selectFLA_5_30">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_30)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">5 5.0<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_50)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_50)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_50" id="selectFLA_5_50">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_50)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">5 7.1.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_711)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_711)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_711" id="selectFLA_5_711">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_711)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">5 8.2.4<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_824)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_824)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_824" id="selectFLA_5_824">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_824)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">5 8.2.9<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_829)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_829)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_829" id="selectFLA_5_829">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_829)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">5 9.2.4<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_924)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_924)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_924" id="selectFLA_5_924">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_924)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">5 9.2.6<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_5_926)$"Y"]
+    ~([Students.U_PEI_FL]FLA_5_926)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_5_926" id="selectFLA_5_926">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_5_926)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+
+**Grade 6 **
+<tr>
+  <td><strong>No longer in use:</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td class="fl-label">6 10.3.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_6_1031)$"Y"]
+    ~([Students.U_PEI_FL]FLA_6_1031)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_6_1031" id="selectFLA_6_1031">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_6_1031)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">6 3.0<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_6_30)$"Y"]
+    ~([Students.U_PEI_FL]FLA_6_30)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_6_30" id="selectFLA_6_30">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_6_30)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">6 5.0<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_6_50)$"Y"]
+    ~([Students.U_PEI_FL]FLA_6_50)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_6_50" id="selectFLA_6_50">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_6_50)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">6 7.1.1<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_6_711)$"Y"]
+    ~([Students.U_PEI_FL]FLA_6_711)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_6_711" id="selectFLA_6_711">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_6_711)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">6 8.2.4<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_6_824)$"Y"]
+    ~([Students.U_PEI_FL]FLA_6_824)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_6_824" id="selectFLA_6_824">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_6_824)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">6 8.2.9<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_6_829)$"Y"]
+    ~([Students.U_PEI_FL]FLA_6_829)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_6_829" id="selectFLA_6_829">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_6_829)]</select>
+
+    [/if#Y]
+  </td>
+</tr>
+<tr>
+  <td class="fl-label">6 9.2.7<span class="tooltiptext"></span>
+  </td>
+  <td>~[if#Y.~([Students.U_PEI_FL]FLA_6_927)$"Y"]
+    ~([Students.U_PEI_FL]FLA_6_927)
+    [else#Y]
+
+    <select name="[Students.U_PEI_FL]FLA_6_927" id="selectFLA_6_927">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_6_927)]</select>
+
+    [/if#Y]
+  </td>
+</tr>

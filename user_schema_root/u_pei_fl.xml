@@ -3,21 +3,15 @@
     <extensionname>U_PEI_FL</extensionname>
     <extendedTable coreTable="Students" dbTableName="U_PEI_FL" comment="">
         <field name="FLA_9_413D" type="String" length="5" comment="Foundation Learning FLA-9-4.1.3D"/>
-        <field name="ELA_4_WS5" type="String" length="5" comment="Foundation Learning ELA-4-WS5"/>
         <field name="ELA_9_COMMENT" type="String" length="2048" comment="Comment for 9 ELA"/>
         <field name="FLA_9_413A" type="String" length="5" comment="Foundation Learning FLA-9-4.1.3A"/>
-        <field name="FLA_K_15" type="String" length="5" comment="Foundation Learning FLA-K-1.5"/>
         <field name="FLA_K_YEAR" type="String" length="100" comment="Year for K FLA"/>
         <field name="ELA_3_YEAR" type="String" length="100" comment="Year for 3 ELA"/>
         <field name="FLA_4_30" type="String" length="5" comment="Foundation Learning FLA-4-3.0"/>
         <field name="FLA_8_223C" type="String" length="5" comment="Foundation Learning FLA-8-2.2.3C"/>
-        <field name="FLA_K_24" type="String" length="5" comment="Foundation Learning FLA-K-2.4"/>
         <field name="MATH_5_N2" type="String" length="5" comment="Foundational Learning Math-5-N2"/>
-        <field name="ELA_K_II3" type="String" length="5" comment="Foundation Learning ELA-K-II3"/>
-        <field name="FLA_K_23" type="String" length="5" comment="Foundation Learning FLA-K-2.3"/>
         <field name="MATH_7_YEAR" type="String" length="100" comment="Year for 7 Math"/>
         <field name="ELA_5_SL11" type="String" length="5" comment="Foundation Learning ELA-5-SL1.1"/>
-        <field name="FLA_K_22" type="String" length="5" comment="Foundation Learning FLA-K-22"/>
         <field name="MATH_5_N9" type="String" length="5" comment="Foundational Learning Math-5-N9"/>
         <field name="FLA_K_21" type="String" length="5" comment="Foundation Learning FLA-K-2.1"/>
         <field name="MATH_5_N5" type="String" length="5" comment="Foundational Learning Math-5-N5"/>
@@ -51,8 +45,6 @@
         <field name="FLA_7_YEAR" type="String" length="100" comment="Year for 7 FLA"/>
         <field name="ELA_3_TEACHER" type="String" length="100" comment="Teacher for 3 ELA"/>
         <field name="ELA_2_WTC3" type="String" length="5" comment="Foundation Learning ELA-2-WTC3"/>
-        <field name="ELA_2_WTC2" type="String" length="5" comment="Foundation Learning ELA-2-WTC2"/>
-        <field name="ELA_2_WTC1" type="String" length="5" comment="Foundation Learning ELA-2-WTC1"/>
         <field name="FLA_8_YEAR" type="String" length="100" comment="Year for 8 FLA"/>
         <field name="ELA_3_WS1" type="String" length="5" comment="Foundation Learning ELA-3-WS1"/>
         <field name="FLA_8_123D" type="String" length="5" comment="Foundation Learning FLA-8-1.2.3D"/>
@@ -88,7 +80,6 @@
         <field name="FLA_9_COMMENT" type="String" length="2048" comment="Comment for 9 FLA"/>
         <field name="ELA_9_TEACHER" type="String" length="100" comment="Teacher for 9 ELA"/>
         <field name="MATH_6_YEAR" type="String" length="100" comment="Year for 6 Math"/>
-        <field name="ELA_3_WTO2" type="String" length="5" comment="Foundation Learning ELA-3-WTO2"/>
         <field name="ELA_3_WTO3" type="String" length="5" comment="Foundation Learning ELA-3-WTO3"/>
         <field name="ELA_2_YEAR" type="String" length="100" comment="Year for 2 ELA"/>
         <field name="FLA_6_927" type="String" length="5" comment="Foundation Learning FLA-6-9.2.7"/>
@@ -123,7 +114,6 @@
         <field name="MATH_8_N7" type="String" length="5" comment="Foundational Learning Math-8-N7"/>
         <field name="MATH_8_N6" type="String" length="5" comment="Foundational Learning Math-8-N6"/>
         <field name="FLA_8_411B" type="String" length="5" comment="Foundation Learning FLA-8-4.1.1B"/>
-        <field name="ELA_3_PCE2" type="String" length="5" comment="Foundation Learning ELA-3-PCE2"/>
         <field name="ELA_4_YEAR" type="String" length="100" comment="Year for 4 ELA"/>
         <field name="MATH_9_PR3_RR3" type="String" length="5" comment="Foundational Learning Math-9-PR3-RR3"/>
         <field name="ELA_1_SCHOOL" type="String" length="100" comment="School for 1 ELA"/>
@@ -154,12 +144,9 @@
         <field name="ELA_K_WTC4" type="String" length="5" comment="Foundation Learning ELA-K-WTC4"/>
         <field name="MATH_K_21" type="String" length="5" comment="Foundational Learning Math-K-2.1"/>
         <field name="FLA_K_SCHOOL" type="String" length="100" comment="School for K FLA"/>
-        <field name="ELA_5_PCE5" type="String" length="5" comment="Foundation Learning ELA-5-PCE5"/>
         <field name="MATH_5_TEACHER" type="String" length="100" comment="Teacher for 5 Math"/>
         <field name="FLA_6_E2" type="String" length="5" comment="Foundation Learning FLA-6-E.2"/>
-        <field name="ELA_1_WS5" type="String" length="5" comment="Foundation Learning ELA-1-WS5"/>
         <field name="MATH_1_COMMENT" type="String" length="2048" comment="Comment for 1 Math"/>
-        <field name="ELA_1_WS1" type="String" length="5" comment="Foundation Learning ELA-1-WS1"/>
         <field name="ELA_5_PCE2" type="String" length="5" comment="Foundation Learning ELA-5-PCE2"/>
         <field name="MATH_7_PR7_RR7" type="String" length="5" comment="Foundational Learning Math-7-PR7-RR7"/>
         <field name="ELA_6_II2" type="String" length="5" comment="Foundation Learning ELA-6-II2"/>
@@ -178,12 +165,10 @@
         <field name="FLA_9_TEACHER" type="String" length="100" comment="Teacher for 9 FLA"/>
         <field name="ELA_4_WTC4" type="String" length="5" comment="Foundation Learning ELA-4-WTC4"/>
         <field name="ELA_3_LC3" type="String" length="5" comment="Foundation Learning ELA-3-LC3"/>
-        <field name="ELA_3_LC1" type="String" length="5" comment="Foundation Learning ELA-3-LC1"/>
         <field name="MATH_K_16" type="String" length="5" comment="Foundational Learning Math-K-1.6"/>
         <field name="ELA_7_SCHOOL" type="String" length="100" comment="School for 7 ELA"/>
         <field name="MATH_7_N7" type="String" length="5" comment="Foundational Learning Math-7-N7"/>
         <field name="MATH_K_17" type="String" length="5" comment="Foundational Learning Math-K-1.7"/>
-        <field name="ELA_3_WTV3" type="String" length="5" comment="Foundation Learning ELA-3-WTV3"/>
         <field name="MATH_4_TEACHER" type="String" length="100" comment="Teacher for 4 Math"/>
         <field name="MATH_4_COMMENT" type="String" length="2048" comment="Comment for 4 Math"/>
         <field name="ELA_1_TEACHER" type="String" length="100" comment="Teacher for 1 ELA"/>
@@ -191,7 +176,6 @@
         <field name="MATH_6_SS3_FE3" type="String" length="5" comment="Foundational Learning Math-6-SS3-FE3"/>
         <field name="FLA_4_E2" type="String" length="5" comment="Foundation Learning FLA-4-E.2"/>
         <field name="FLA_6_CO2" type="String" length="5" comment="Foundation Learning FLA-6-CO.2"/>
-        <field name="ELA_3_SL12" type="String" length="5" comment="Foundation Learning ELA-3-SL1.2"/>
         <field name="FLA_1_TEACHER" type="String" length="100" comment="Teacher for 1 FLA"/>
         <field name="MATH_5_YEAR" type="String" length="100" comment="Year for 5 Math"/>
         <field name="FLA_5_711" type="String" length="5" comment="Foundation Learning FLA-5-7.1.1"/>
@@ -205,7 +189,6 @@
         <field name="FLA_1_COMMENT" type="String" length="2048" comment="Comment for 9 FLA"/>
         <field name="ELA_YEAR_5" type="String" length="100" comment="Year for 5 ELA"/>
         <field name="ELA_1_COMMENT" type="String" length="2048" comment="Comment for 1 ELA"/>
-        <field name="ELA_3_SL23" type="String" length="5" comment="Foundation Learning ELA-3-SL2.3"/>
         <field name="ELA_6_SCHOOL" type="String" length="100" comment="School for 6 ELA"/>
         <field name="FLA_5_824" type="String" length="5" comment="Foundation Learning FLA-5-8.2.4"/>
         <field name="FLA_4_TEACHER" type="String" length="100" comment="Teacher for 4 FLA"/>
@@ -230,7 +213,6 @@
         <field name="ELA_1_YEAR" type="String" length="100" comment="Year for 1 ELA"/>
         <field name="FLA_9_YEAR" type="String" length="100" comment="Year for 9 FLA"/>
         <field name="ELA_7_COMMENT" type="String" length="2048" comment="Comment for 7 ELA"/>
-        <field name="ELA_2_PCE3" type="String" length="5" comment="Foundation Learning ELA-2-PCE3"/>
         <field name="ELA_2_PCE1" type="String" length="5" comment="Foundation Learning ELA-2-PCE1"/>
         <field name="ELA_1_LC1" type="String" length="5" comment="Foundation Learning ELA-1-LC1"/>
         <field name="MATH_1_YEAR" type="String" length="100" comment="Year for 1 Math"/>
@@ -242,7 +224,6 @@
         <field name="MATH_9_N2" type="String" length="5" comment="Foundational Learning Math-9-N2"/>
         <field name="ELA_4_II3" type="String" length="5" comment="Foundation Learning ELA-4-II3"/>
         <field name="FLA_1_L3" type="String" length="5" comment="Foundation Learning FLA-1-L.3"/>
-        <field name="FLA_1_L2" type="String" length="5" comment="Foundation Learning FLA-1-L.2"/>
         <field name="FLA_4_SCHOOL" type="String" length="100" comment="School for 4 FLA"/>
         <field name="MATH_1_TEACHER" type="String" length="100" comment="Teacher for 1 Math"/>
         <field name="ELA_1_WTC4" type="String" length="5" comment="Foundation Learning ELA-1-WTC4"/>
@@ -278,7 +259,6 @@
         <field name="MATH_2_N1" type="String" length="5" comment="Foundational Learning Math-2-N1"/>
         <field name="ELA_1_RS5" type="String" length="5" comment="Foundation Learning ELA-1-RS5"/>
         <field name="MATH_2_N4" type="String" length="5" comment="Foundational Learning Math-2-N4"/>
-        <field name="FLA_K_92" type="String" length="5" comment="Foundation Learning FLA-K-9.2"/>
         <field name="FLA_1_YEAR" type="String" length="100" comment="Year for 1 FLA"/>
         <field name="FLA_6_50" type="String" length="5" comment="Foundation Learning FLA-6-5.0"/>
         <field name="FLA_K_91" type="String" length="5" comment="Foundation Learning FLA-K-9.1"/>
@@ -304,7 +284,6 @@
         <field name="ELA_K_SL23" type="String" length="5" comment="Foundation Learning ELA-K-SL2.3"/>
         <field name="ELA_K_SL22" type="String" length="5" comment="Foundation Learning ELA-K-SL2.2"/>
         <field name="ELA_K_SL24" type="String" length="5" comment="Foundation Learning ELA-K-SL2.4"/>
-        <field name="FLA_K_72" type="String" length="5" comment="Foundation Learning FLA-K-7.2"/>
         <field name="FLA_K_71" type="String" length="5" comment="Foundation Learning FLA-K-7.1"/>
         <field name="FLA_9_111E" type="String" length="5" comment="Foundation Learning FLA-9-1.1.1E"/>
         <field name="MATH_7_SP4" type="String" length="5" comment="Foundational Learning Math-7-SP4"/>
@@ -312,7 +291,6 @@
         <field name="ELA_3_II4" type="String" length="5" comment="Foundation Learning ELA-3-II4"/>
         <field name="FLA_3_732" type="String" length="5" comment="Foundation Learning FLA-3-7.3.2"/>
         <field name="MATH_7_SS2_FE2" type="String" length="5" comment="Foundational Learning Math-7-SS2-FE2"/>
-        <field name="FLA_K_310" type="String" length="5" comment="Foundation Learning FLA-K-3.10"/>
         <field name="FLA_4_CO2" type="String" length="5" comment="Foundation Learning FLA-4-CO.2"/>
         <field name="ELA_K_SL11" type="String" length="5" comment="Foundation Learning ELA-K-SL1.1"/>
         <field name="ELA_K_SL14" type="String" length="5" comment="Foundation Learning ELA-K-SL1.4"/>
@@ -320,9 +298,7 @@
         <field name="MATH_3_N1" type="String" length="5" comment="Foundational Learning Math-3-N1"/>
         <field name="ELA_5_SCHOOL" type="String" length="100" comment="School for 5 ELA"/>
         <field name="MATH_3_N9" type="String" length="5" comment="Foundational Learning Math-3-N9"/>
-        <field name="FLA_4_CO5" type="String" length="5" comment="Foundation Learning FLA-4-CO.5"/>
-        <field name="MATH_3_TEACHER" type="String" length="100" comment="Teacher for 3 Math"/>
-        <field name="MATH_2_TEACHER" type="String" length="100" comment="Teacher for 2 Math"/>
+        <field name="FLA_4_CO5" type="String" length="5" comment="Foundation Learning FLA-4-CO.5"/>R
         <field name="ELA_3_WTC1" type="String" length="5" comment="Foundation Learning ELA-3-WTC1"/>
         <field name="FLA_7_323C" type="String" length="5" comment="Foundation Learning FLA-7-3.2.3C"/>
         <field name="FLA_7_COMMENT" type="String" length="2048" comment="Comment for 7 FLA"/>
@@ -357,7 +333,6 @@
         <field name="FLA_2_COMMENT" type="String" length="2048" comment="Comment for 9 ELA"/>
         <field name="FLA_3_SCHOOL" type="String" length="100" comment="School for 3 FLA"/>
         <field name="MATH_9_COMMENT" type="String" length="2048" comment="Comment for 9 Math"/>
-        <field name="FLA_K_33" type="String" length="5" comment="Foundation Learning FLA-K-3.3"/>
         <field name="ELA_2_SL21" type="String" length="5" comment="Foundation Learning ELA-2-SL21"/>
         <field name="FLA_6_30" type="String" length="5" comment="Foundation Learning FLA-6-3.0"/>
         <field name="ELA_2_II1" type="String" length="5" comment="Foundation Learning ELA-2-II1"/>
@@ -365,15 +340,12 @@
         <field name="FLA_K_31" type="String" length="5" comment="Foundation Learning FLA-K-3.1"/>
         <field name="ELA_6_WTO1" type="String" length="5" comment="Foundation Learning ELA-6-WTO1"/>
         <field name="FLA_4_YEAR" type="String" length="100" comment="Year for 4 FLA"/>
-        <field name="ELA_2_II2" type="String" length="5" comment="Foundation Learning ELA-2-II2"/>
         <field name="ELA_4_WTS2" type="String" length="5" comment="Foundation Learning ELA-4-WTS2"/>
         <field name="FLA_5_CO5" type="String" length="5" comment="Foundation Learning FLA-5-CO.5"/>
         <field name="FLA_5_CO2" type="String" length="5" comment="Foundation Learning FLA-5-CO.2"/>
         <field name="FLA_3_931" type="String" length="5" comment="Foundation Learning FLA-3-9.3.1"/>
         <field name="MATH_6_SP1" type="String" length="5" comment="Foundational Learning Math-6-SP1"/>
-        <field name="FLA_K_48" type="String" length="5" comment="Foundation Learning FLA-K-4.8"/>
         <field name="FLA_5_50" type="String" length="5" comment="Foundation Learning FLA-5-5.0"/>
-        <field name="FLA_K_43" type="String" length="5" comment="Foundation Learning FLA-K-4.3"/>
         <field name="FLA_K_41" type="String" length="5" comment="Foundation Learning FLA-K-4.1"/>
         <field name="ELA_7_READ_LIT" type="String" length="5" comment="Foundation Learning ELA Gr 7 Reading Comp - Literal"/>
         <field name="ELA_7_READ_INF" type="String" length="5" comment="Foundation Learning ELA Gr 7 Reading Comp - Inferential"/>
