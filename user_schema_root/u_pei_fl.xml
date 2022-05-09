@@ -108,7 +108,6 @@
       <field name="ELA_K_WTC4" type="String" length="5" comment="Foundation Learning ELA-K-WTC4"/>
       <field name="ELA_K_WTI2" type="String" length="5" comment="Foundation Learning ELA-K-WTI2"/>
       <field name="ELA_K_YEAR" type="String" length="100" comment="Year for K ELA"/>
-      <field name="ELA_YEAR_5" type="String" length="100" comment="Year for 5 ELA"/>
       <field name="FLA_1_CO0" type="String" length="5" comment="Foundation Learning FLA-1-CO.0"/>
       <field name="FLA_1_CO2" type="String" length="5" comment="Foundation Learning FLA-1-CO.2"/>
       <field name="FLA_1_CO5" type="String" length="5" comment="Foundation Learning FLA-1-CO.5"/>
