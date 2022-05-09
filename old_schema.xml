@@ -38,6 +38,8 @@
 <field name="ELA_3_WTV3" type="String" length="5" comment="Foundation Learning ELA-3-WTV3"/>
 <field name="ELA_4_WS5" type="String" length="5" comment="Foundation Learning ELA-4-WS5"/>
 <field name="ELA_5_PCE5" type="String" length="5" comment="Foundation Learning ELA-5-PCE5"/>
+<field name="ELA_6_WTO3" type="String" length="5" comment="Foundation Learning ELA-6-WTO3"/>
+<field name="ELA_6_WTO1" type="String" length="5" comment="Foundation Learning ELA-6-WTO1"/>
 
 **Removed FLA FLs**
 <field name="FLA_K_92" type="String" length="5" comment="Foundation Learning FLA-K-9.2"/>
@@ -51,3 +53,36 @@
 <field name="FLA_K_23" type="String" length="5" comment="Foundation Learning FLA-K-2.3"/>
 <field name="FLA_K_24" type="String" length="5" comment="Foundation Learning FLA-K-2.4"/>
 <field name="FLA_1_L2" type="String" length="5" comment="Foundation Learning FLA-1-L.2"/>
+<field name="FLA_1_L3" type="String" length="5" comment="Foundation Learning FLA-1-L.3"/>
+<field name="FLA_1_1021" type="String" length="5" comment="Foundation Learning FLA-1-10.2.1"/>
+<field name="FLA_1_912" type="String" length="5" comment="Foundation Learning FLA-1-9.1.2"/>
+<field name="FLA_2_1021" type="String" length="5" comment="Foundation Learning FLA-2-10.2.1"/>
+<field name="FLA_2_1042" type="String" length="5" comment="Foundation Learning FLA-2-1042"/>
+<field name="FLA_2_915" type="String" length="5" comment="Foundation Learning FLA-2-9.1.5"/>
+<field name="FLA_3_1021" type="String" length="5" comment="Foundation Learning FLA-3-10.2.1"/>
+<field name="FLA_3_1042" type="String" length="5" comment="Foundation Learning FLA-3-10.4.2"/>
+<field name="FLA_3_732" type="String" length="5" comment="Foundation Learning FLA-3-7.3.2"/>
+<field name="FLA_3_914" type="String" length="5" comment="Foundation Learning FLA-3-9.1.4"/>
+<field name="FLA_3_931" type="String" length="5" comment="Foundation Learning FLA-3-9.3.1"/>
+<field name="FLA_4_1031" type="String" length="5" comment="Foundation Learning FLA-4-10.3.1"/>
+<field name="FLA_4_30" type="String" length="5" comment="Foundation Learning FLA-4-3.0"/>
+<field name="FLA_4_50" type="String" length="5" comment="Foundation Learning FLA-4-5.0"/>
+<field name="FLA_4_711" type="String" length="5" comment="Foundation Learning FLA-4-7.1.1"/>
+<field name="FLA_4_824" type="String" length="5" comment="Foundation Learning FLA-4-8.2.4"/>
+<field name="FLA_4_829" type="String" length="5" comment="Foundation Learning FLA-4-8.2.9"/>
+<field name="FLA_4_924" type="String" length="5" comment="Foundation Learning FLA-4-9.2.4"/>
+<field name="FLA_5_1031" type="String" length="5" comment="Foundation Learning FLA-5-10.3.1"/>
+<field name="FLA_5_30" type="String" length="5" comment="Foundation Learning FLA-5-3.0"/>
+<field name="FLA_5_50" type="String" length="5" comment="Foundation Learning FLA-5-5.0"/>
+<field name="FLA_5_711" type="String" length="5" comment="Foundation Learning FLA-5-7.1.1"/>
+<field name="FLA_5_824" type="String" length="5" comment="Foundation Learning FLA-5-8.2.4"/>
+<field name="FLA_5_829" type="String" length="5" comment="Foundation Learning FLA-5-8.2.9"/>
+<field name="FLA_5_924" type="String" length="5" comment="Foundation Learning FLA-5-9.2.4"/>
+<field name="FLA_5_926" type="String" length="5" comment="Foundation Learning FLA-5-9.2.6"/>
+<field name="FLA_6_1031" type="String" length="5" comment="Foundation Learning FLA-6-10.3.1"/>
+<field name="FLA_6_30" type="String" length="5" comment="Foundation Learning FLA-6-3.0"/>
+<field name="FLA_6_50" type="String" length="5" comment="Foundation Learning FLA-6-5.0"/>
+<field name="FLA_6_711" type="String" length="5" comment="Foundation Learning FLA-6-7.1.1"/>
+<field name="FLA_6_824" type="String" length="5" comment="Foundation Learning FLA-6-8.2.4"/>
+<field name="FLA_6_829" type="String" length="5" comment="Foundation Learning FLA-6-8.2.9"/>
+<field name="FLA_6_927" type="String" length="5" comment="Foundation Learning FLA-6-9.2.7"/>
