@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Foundational Learnings</title>
+  <!-- required scripts -->
+  ~[wc:commonscripts]
+  <!-- Required style sheets: screen.css, and print.css -->
+  <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+  <link href="/images/css/print.css" rel="stylesheet" media="print">
+  <link href="/images/css/fls.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+  ~[wc:admin_header_frame_css]
+  <!-- breadcrumb start -->
+  <a href="/admin/home.html" target="_top">Start Page</a> &gt; <a href="/admin/students/home.html?selectstudent=nosearch" target="_top">Student Selection</a> &gt; Foundational Learnings
+  <!-- breadcrumb end -->
+  ~[wc:admin_navigation_frame_css]
+  <!-- start of main menu and content -->
+  ~[wc:title_student_begin_css]Foundational Learnings~[wc:title_student_end_css]
+  <form action="/~[self.page]?frn=~(studentfrn)&changesSaved=true" method="POST">
+    <!-- start of content area -->
+    <ul class="tabs">
+      <li><a href="fl0.html?frn=~(studentfrn)">K</a></li>
+      <li><a href="fl1.html?frn=~(studentfrn)">1</a></li>
+      <li class="selected"><a href="fl2.html?frn=~(studentfrn)">2</a></li>
+      <li><a href="fl3.html?frn=~(studentfrn)">3</a></li>
+      <li><a href="fl4.html?frn=~(studentfrn)">4</a></li>
+      <li><a href="fl5.html?frn=~(studentfrn)">5</a></li>
+      <li><a href="fl6.html?frn=~(studentfrn)">6</a></li>
+      <li><a href="fl7.html?frn=~(studentfrn)">7</a></li>
+      <li><a href="fl8.html?frn=~(studentfrn)">8</a></li>
+      <li><a href="fl9.html?frn=~(studentfrn)">9</a></li>
+    </ul>
+    ~[if.gpv.changesSaved=true]<div class="feedback-confirm">~[text:psx.common.changes_recorded]</div>[/if]
+    <h2>Mathematics</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">2 N1
+            <span class="tooltiptext">Say the number sequence from 0 to 100 by: 2s, 5s and 10s, forward and backward, using starting points that are multiples of 2, 5 and 10 respectively; 10s using starting points from 1 to 9; and 2s
+              starting from 1.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_2_N1" id="selectMath_2_N1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_2_N1))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 N4
+            <span class="tooltiptext">Represent and describe numbers to 100, concretely, pictorially and symbolically.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_2_N4" id="selectMath_2_N4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_2_N4))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 N6
+            <span class="tooltiptext">Estimate quantities to 100 using referents.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_2_N6" id="selectMath_2_N6">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_2_N6))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 N9
+            <span class="tooltiptext">
+              Demonstrate an understanding of addition (limited to 1 and 2-digit numerals) with answers to 100 and the corresponding subtraction by: using personal strategies for adding and subtracting with and without the support of manipulatives;
+              creating and solving problems that involve addition and subtraction; explaining that the order in which numbers are added does not affect the sum; and explaining that the order in which numbers are subtracted may affect the difference.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_2_N9" id="selectMath_2_N9">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_2_N9))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 N10
+            <span class="tooltiptext">
+              Apply mental mathematics strategies, such as: using doubles; making 10; one more, one less; two more, two less; building on a known double; and addition for subtraction to determine basic addition facts to 18 and related subtraction
+              facts.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_2_N10" id="selectMath_2_N10">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_2_N10))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 PR2-RR2
+            <span class="tooltiptext">
+              Demonstrate an understanding of increasing patterns by: describing; reproducing; extending; and creating patterns using manipulatives, diagrams, sounds and actions (numbers to 100).
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_2_PR2_RR2" id="selectMath_2_PR2_RR2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_2_PR2_RR2))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 PR4-RR4
+            <span class="tooltiptext">
+              Record equalities and inequalities symbolically, using the equal symbol or the not equal symbol.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_2_PR4_RR4" id="selectMath_2_PR4_RR4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_2_PR4_RR4))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Comment:</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]MATH_2_COMMENT" id="textareaMATH_2_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]MATH_2_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_2_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]MATH_2_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_2_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]MATH_2_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_2_YEAR" class="fl_year" value="~([Students.U_PEI_FL]MATH_2_YEAR)">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <h2>English Language Arts</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">2 SL2.1
+            <span class="tooltiptext">Sustain one-to-one conversations and contribute to small and large-group interactions
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_SL21" id="selectELA_2_SL21">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_SL21))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 RS4
+            <span class="tooltiptext">Read familiar passages fluently with appropriate phrasing and expression to convey sense of text to audience; may hesitate with unfamiliar words
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_RS4" id="selectELA_2_RS4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_RS4))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 LC2
+            <span class="tooltiptext">Retell narrative text including main events in sequence with some supporting details, and most story elements (e.g., setting, main characters, problem/resolution); verbal prompts or graphic organizers may be used
+              to support/extend a retell
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_LC2" id="selectELA_2_LC2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_LC2))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 II1
+            <span class="tooltiptext">Make simple inferences about a character (their actions or feelings) and story events, providing some general supporting details
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_II1" id="selectELA_2_II1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_II1)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 PCE1
+            <span class="tooltiptext">Make obvious personal connections; relate prior knowledge and make concrete text-to-text comparisons, when similarities are clear and straightforward; explanation may be general and may include some unrelated
+              examples
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_PCE1" id="selectELA_2_PCE1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_PCE1)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 WS3
+            <span class="tooltiptext">Draft a piece of writing showing awareness of need to stay on topic and provide the reader with information (e.g., basic sequence, supporting details)
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_WS3" id="selectELA_2_WS3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_WS3)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 WTI3
+            <span class="tooltiptext">Include some supporting details to expand upon the ideas/events; may have some “gaps” or irrelevant information
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_WTI3" id="selectELA_2_WTI3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_WTI3)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 WTC3
+            <span class="tooltiptext">Spell many high frequency words correctly; attempt to spell longer, more complex words using phonetic approximations
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_2_WTC3" id="selectELA_2_WTC3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_2_WTC3)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Comment</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]ELA_2_COMMENT" id="textareaELA_2_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]ELA_2_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_2_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]ELA_2_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_2_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]ELA_2_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_2_YEAR" class="fl_year" value="~([Students.U_PEI_FL]ELA_2_YEAR)">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <h2>French Language Arts</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">2 CO.2<span class="tooltiptext">Utiliser un système d’activités stratégiques pour accéder à une compréhension littérale de messages oraux simples provenant de diverses sources en faisant preuve d’ouverture et de
+              respect.</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_2_CO2" id="selectFLA_2_CO2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_CO2)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 CO.5<span class="tooltiptext">S’exprimer dans diverses situations de communication orale simples spontanées ou préparées, en faisant preuve de respect envers son public</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_2_CO5" id="selectFLA_2_CO5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_CO5)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 L.2<span class="tooltiptext">Utiliser un système d’activités stratégiques pour accéder à une compréhension littérale de divers textes simples y compris des textes numérisés</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_2_L2" id="selectFLA_2_L2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_L2)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 L.3<span class="tooltiptext">Utiliser un système d’activités stratégiques pour accéder à une compréhension interprétative de divers textes simples y compris des textes numérisés</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_2_L3" id="selectFLA_2_L3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_L3)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 L.4<span class="tooltiptext">Utiliser un système d’activités stratégiques pour accéder à une compréhension analytico-critique de divers textes simples y compris des textes numérisés</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_2_L4" id="selectFLA_2_L4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_L4)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">2 E.2<span class="tooltiptext">Développer des compétences liées aux traits d’écriture  pour créer une variété de textes simples de différents genres (sous forme imprimée et numérique)</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_2_E2" id="selectFLA_2_E2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_2_E2)]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Comment</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]FLA_2_COMMENT" id="textareaFLA_2_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]FLA_2_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_2_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]FLA_2_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_2_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]FLA_2_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 2 Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_2_YEAR" class="fl_year" value="~([Students.U_PEI_FL]FLA_2_YEAR)">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="button-row">
+      <input type="hidden" name="frn" value="~(studentfrn)">
+      <input type="hidden" name="ac" value="prim">
+      ~[submitbutton]
+    </div>
+    <br />
+  </form>
+  <!-- end of content area -->
+  ~[wc:admin_footer_frame_css]
+</body>
+
+</html>

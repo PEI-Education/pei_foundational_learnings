@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foundational Learnings</title>
+  <!-- required scripts -->
+  ~[wc:commonscripts]
+  <!-- Required style sheets: screen.css, and print.css -->
+  <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+  <link href="/images/css/print.css" rel="stylesheet" media="print">
+  <link href="/images/css/fls.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+  ~[wc:admin_header_frame_css]
+  <!-- breadcrumb start -->
+  <a href="/admin/home.html" target="_top">Start Page</a> &gt; <a href="/admin/students/home.html?selectstudent=nosearch" target="_top">Student Selection</a> &gt; Foundational Learnings
+  <!-- breadcrumb end -->
+  ~[wc:admin_navigation_frame_css]
+  <!-- start of main menu and content -->
+  ~[wc:title_student_begin_css]Foundational Learnings~[wc:title_student_end_css]
+  <form action="/~[self.page]?frn=~(studentfrn)&changesSaved=true" method="POST">
+    <!-- start of content area -->
+    <ul class="tabs">
+      <li><a href="fl0.html?frn=~(studentfrn)">K</a></li>
+      <li class="selected"><a href="fl1.html?frn=~(studentfrn)">1</a></li>
+      <li><a href="fl2.html?frn=~(studentfrn)">2</a></li>
+      <li><a href="fl3.html?frn=~(studentfrn)">3</a></li>
+      <li><a href="fl4.html?frn=~(studentfrn)">4</a></li>
+      <li><a href="fl5.html?frn=~(studentfrn)">5</a></li>
+      <li><a href="fl6.html?frn=~(studentfrn)">6</a></li>
+      <li><a href="fl7.html?frn=~(studentfrn)">7</a></li>
+      <li><a href="fl8.html?frn=~(studentfrn)">8</a></li>
+      <li><a href="fl9.html?frn=~(studentfrn)">9</a></li>
+    </ul>
+    ~[if.gpv.changesSaved=true]<div class="feedback-confirm">~[text:psx.common.changes_recorded]</div>[/if]
+    <h2>Mathematics</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">1.N1
+            <span class="tooltiptext">
+              Say the number sequence, 0 to 100, by: 1s forward and backward between any two given numbers; 2s to 20, forward starting at 0; and 5s and 10s to 100, forward starting at 0.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_N1" id="selectMath_1_N1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_N1))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.N2
+            <span class="tooltiptext">
+              Recognize, at a glance, and name familiar arrangements of 1 to 10 objects or dots.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_N2" id="selectMath_1_N2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_N2))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.N3
+            <span class="tooltiptext">
+              Demonstrate an understanding of counting by: indicating that the last number said identifies “how many”; showing that any set has only one count; using the counting on strategy; and •using parts or equal groups to count sets.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_N3" id="selectMath_1_N3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_N3))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.N4
+            <span class="tooltiptext">
+              Represent and describe numbers to 20 concretely, pictorially and symbolically.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_N4" id="selectMath_1_N4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_N4))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.N5
+            <span class="tooltiptext">
+              Compare sets containing up to 20 elements to solve problems using: referents; and one-to-one correspondence.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_N5" id="selectMath_1_N5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_N5))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.N9
+            <span class="tooltiptext">
+              Demonstrate an understanding of addition of numbers with answers to 20 and their corresponding subtraction facts, concretely, pictorially and symbolically by: using familiar and mathematical language to describe additive and subtractive
+              actions from their experience; creating and solving problems in context that involve addition and subtraction; and modelling addition and subtraction using a variety of concrete and visual representations, and recording the process
+              symbolically.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_N9" id="selectMath_1_N9">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_N9))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.N10
+            <span class="tooltiptext">
+              Describe and use mental mathematics strategies (memorization not intended), such as: counting on and counting back; making 10; doubles; and using addition to subtract to determine the basic addition facts to 18 and related subtraction
+              facts.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_N10" id="selectMath_1_N10">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_N10))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.PR3-RR3
+            <span class="tooltiptext">
+              Describe equality as a balance and inequality as an imbalance, concretely and pictorially (0 to 20).
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_PR3_RR3" id="selectMath_1_PR3_RR3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_PR3_RR3))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1.SS1-FE1
+            <span class="tooltiptext">
+              Demonstrate an understanding of measurement as a process of comparing by: identifying attributes that can be compared; ordering objects; making statements of comparison; filling, covering or matching.
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]Math_1_SS1_FE1" id="selectMath_1_SS1_FE1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_1_SS1_FE1))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Comment:</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]MATH_1_COMMENT" id="textareaMath_1_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]MATH_1_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_1_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]MATH_1_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_1_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]MATH_1_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]MATH_1_YEAR" class="fl_year" value="~([Students.U_PEI_FL]MATH_1_YEAR)">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <h2>English Language Arts</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">1 SL3.1
+            <span class="tooltiptext">Demonstrate a growing awareness of social conventions such as turn-taking and politeness in conversation and co-operative play
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_SL31" id="selectELA_1_SL31">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_SL31))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 RS1
+            <span class="tooltiptext">Monitor reading and self-correct when reading does not make sense, sound right and/or look right; reread to check for meaning (may require occasional prompting)</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_RS1" id="selectELA_1_RS1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_RS1))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 RS2
+            <span class="tooltiptext">Use meaning, word structure (plurals, roots and ing, ed, s endings), language structure (e.g., predictable word order and language patterns), and phonics (e.g., initial/final/medial sounds; onsets and rimes;
+              common spelling patterns) to solve simple words; may require occasional prompting </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_RS2" id="selectELA_1_RS2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_RS2))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 RS3
+            <span class="tooltiptext">Recognize common high frequency words and personally significant words
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_RS3" id="selectELA_1_RS3">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_RS3))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 LC1
+            <span class="tooltiptext">Respond accurately to most literal questions by identifying specific facts; rely on information located in one place in the text, rather than skimming complete text
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_LC1" id="selectELA_1_LC1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_LC1))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 WS5
+            <span class="tooltiptext">Use sound/symbol knowledge, word structures (ed, s, ing, endings), familiar onset and rimes and word chunks to write unknown words
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_WS5" id="selectELA_1_WS5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_WS5))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 WTI1
+            <span class="tooltiptext"> Choose a general topic and often support or extend written ideas with drawings</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_WTI1" id="selectELA_1_WTI1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_WTI1))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 WTS1
+            <span class="tooltiptext">Use simple sentences, many of which are complete; may rely on repetitive patterns
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_WTS1" id="selectELA_1_WTS1">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_WTS1))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 WTC4
+            <span class="tooltiptext">Use conventional spacing between words</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]ELA_1_WTC4" id="selectELA_1_WTC4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_1_WTC4))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Comment:</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]ELA_1_COMMENT" id="textareaELA_1_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]ELA_1_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_1_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]ELA_1_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_1_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]ELA_1_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]ELA_1_YEAR" class="fl_year" value="~([Students.U_PEI_FL]ELA_1_YEAR)">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <h2>French Language Arts</h2>
+    <div>
+      <table class="linkDescList">
+        <colgroup>
+          <col style="width:20%">
+          <col>
+        </colgroup>
+        <tr>
+          <td class="fl-label">1 CO.0<span class="tooltiptext"> Différencier à l’oral les éléments reliés à la conscience phonologique</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_1_CO0" id="selectFLA_1_CO0">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_CO0))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 CO.2<span class="tooltiptext">Utiliser un système d’activités stratégiques pour accéder à une compréhension littérale de messages oraux simples provenant de diverses sources en faisant preuve d’ouverture et de
+              respect.</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_1_CO2" id="selectFLA_1_CO2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_CO2))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 CO.5<span class="tooltiptext">S’exprimer dans diverses situations de communication orale simples spontanées ou préparées en faisant preuve de respect envers son public</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_1_CO5" id="selectFLA_1_CO5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_CO5))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 L.4<span class="tooltiptext">Utiliser un système d’activités stratégiques pour accéder à une compréhension analytico-critique de divers textes simples y compris des textes numérisés
+            </span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_1_L4" id="selectFLA_1_L4">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_L4))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">1 E.2<span class="tooltiptext">Développer des compétences liées aux traits d’écriture pour créer une variété de textes simples de différents genres (sous forme imprimée et numérique)</span>
+          </td>
+          <td>
+            <select name="[Students.U_PEI_FL]FLA_1_E2" id="selectFLA_1_E2">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_1_E2))]</select>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Comment:</td>
+          <td>
+            <textarea name="[Students.U_PEI_FL]FLA_1_COMMENT" id="textareaFLA_1_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]FLA_1_COMMENT)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Teacher:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_1_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]FLA_1_TEACHER)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 School:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_1_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]FLA_1_SCHOOL)">
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Gr 1 Year:</td>
+          <td>
+            <input name="[Students.U_PEI_FL]FLA_1_YEAR" class="fl_year" value="~([Students.U_PEI_FL]FLA_1_YEAR)">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="button-row">
+      <input type="hidden" name="frn" value="~(studentfrn)">
+      <input type="hidden" name="ac" value="prim">
+      ~[submitbutton]
+    </div>
+    <br />
+  </form>
+  <!-- end of content area -->
+  ~[wc:admin_footer_frame_css]
+</body>
+</html>

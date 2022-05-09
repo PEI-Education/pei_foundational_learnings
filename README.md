@@ -11,4 +11,5 @@ PowerSchool customization for tracking PEI's Foundational Learnings
 **PowerSchool SIS**: Same page layout as on PowerTeacher, but any FL can be modified at any time.
 
 ## Version/Release Notes
+**0.4.0**: Fixed FL numbering on Grades 7-9; added admin pages.
 **0.3.3**: Removed old FI outcomes from pages and DB schema; added test admin page; implemented all coach feedback on PowerTeacher pages.

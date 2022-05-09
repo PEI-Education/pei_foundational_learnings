@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Foundational Learnings</title>
+<!-- required scripts -->
+ ~[wc:commonscripts]
+<!-- Required style sheets: screen.css, and print.css -->
+ <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+ <link href="/images/css/print.css" rel="stylesheet" media="print">
+ <link href="/images/css/fls.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+ ~[wc:admin_header_frame_css]
+ <!-- breadcrumb start -->
+ <a href="/admin/home.html" target="_top">Start Page</a> &gt; <a href="/admin/students/home.html?selectstudent=nosearch" target="_top">Student Selection</a> &gt; Foundational Learnings
+ <!-- breadcrumb end -->
+~[wc:admin_navigation_frame_css]
+<!-- start of main menu and content -->
+~[wc:title_student_begin_css]Foundational Learnings~[wc:title_student_end_css]
+
+<form action="/~[self.page]?frn=~(studentfrn)&changesSaved=true" method="POST">
+<!-- start of content area -->
+<ul class="tabs">
+  <li><a href="fl0.html?frn=~(studentfrn)">K</a></li>
+  <li><a href="fl1.html?frn=~(studentfrn)">1</a></li>
+  <li><a href="fl2.html?frn=~(studentfrn)">2</a></li>
+  <li><a href="fl3.html?frn=~(studentfrn)">3</a></li>
+  <li><a href="fl4.html?frn=~(studentfrn)">4</a></li>
+  <li><a href="fl5.html?frn=~(studentfrn)">5</a></li>
+  <li><a href="fl6.html?frn=~(studentfrn)">6</a></li>
+  <li><a href="fl7.html?frn=~(studentfrn)">7</a></li>
+  <li class="selected"><a href="fl8.html?frn=~(studentfrn)">8</a></li>
+  <li><a href="fl9.html?frn=~(studentfrn)">9</a></li>
+</ul>
+
+~[if.gpv.changesSaved=true]<div class="feedback-confirm">~[text:psx.common.changes_recorded]</div>[/if]
+
+<h2>Mathematics</h2>
+<div>
+  <table class="linkDescList">
+    <colgroup>
+      <col style="width:20%">
+      <col>
+    </colgroup>
+    <tr>
+      <td class="fl-label">8 N5
+        <span class="tooltiptext">
+          Solve problems that involve rates, ratios and proportional reasoning.
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]Math_8_N5" id="selectMath_8_N5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_N5)]</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 N6
+        <span class="tooltiptext">
+          Demonstrate an understanding of multiplying and dividing positive fractions and mixed numbers, concretely, pictorially and symbolically.
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]Math_8_N6" id="selectMath_8_N6">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_N6)]</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 N7
+        <span class="tooltiptext">
+          Demonstrate an understanding of multiplication and division of integers, concretely, pictorially and symbolically.
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]Math_8_N7" id="selectMath_8_N7">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_N7)]</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 PR1-RR1
+        <span class="tooltiptext">
+          Graph and analyse two-variable linear relations.
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]Math_8_PR1_RR1" id="selectMath_8_PR1_RR1">
+          ~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_PR1_RR1)]
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 PR2-RR2
+        <span class="tooltiptext">
+          Model and solve problems using linear equations of the form: ax=b; x/a=b,a≠0; ax+b=c; x/a+ b=c,a≠0; a(x+b)= c concretely, pictorially and symbolically, where a, b and c are integers.
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]Math_8_PR2_RR2" id="selectMath_8_PR2_RR2">
+          ~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_PR2_RR2)]
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 SS1-FE1
+        <span class="tooltiptext">Develop and apply the Pythagorean theorem to solve problems.
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]Math_8_SS1_FE1" id="selectMath_8_SS1_FE1">
+          ~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_SS1_FE1)]
+        b</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Comment:</td>
+      <td>
+        <textarea name="[Students.U_PEI_FL]MATH_8_COMMENT" id="textareaMATH_8_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]MATH_8_COMMENT)"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Teacher:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]MATH_8_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]MATH_8_TEACHER)">
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 School:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]MATH_8_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]MATH_8_SCHOOL)">
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Year:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]MATH_8_YEAR" class="fl_year" value="~([Students.U_PEI_FL]MATH_8_YEAR)">
+      </td>
+    </tr>
+  </table>
+</div>
+<h2>English Language Arts</h2>
+<div>
+  <table class="linkDescList">
+    <colgroup>
+      <col style="width:20%">
+      <col>
+    </colgroup>
+    <tr>
+      <td><strong>Reading Comprehension</strong></td>
+      <td>Learners can respond literally, inferentially and evaluatively to a variety of texts.</td>
+    </tr>
+    <tr>
+      <td class="fl-label">Literal
+        <span class="tooltiptext">Learners can (by writing, representing or speaking):
+          <ul>
+            <li>
+              Find the answers to most literal questions using explicit information found in the text.
+            </li>
+            <li>
+              Identify the important details in order to summarize the text.
+            </li>
+          </ul>
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]ELA_8_READ_LIT" id="selectELA_8_READ_LIT">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_8_READ_LIT)]</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Inferential
+        <span class="tooltiptext">Learners can (by writing, representing or speaking):
+            <ul>
+              <li>
+                Use background/prior knowledge and hints found in the text to make judgements.
+              </li>
+              <li>
+                Find examples in the text to support the judgements made.
+              </li>
+            </ul>
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]ELA_8_READ_INF" id="selectELA_8_READ_INF">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_8_READ_INF)]</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Evaluative
+        <span class="tooltiptext">Learners can (by writing, representing or speaking):
+          <ul>
+            <li>
+              Make text-to-self connections; make text-to-text connections; make text-to-world connections.
+            </li>
+            <li>
+              Explain how the personal connections they make help them to understand the text.
+            </li>
+            <li>
+              Explain how the author’s use of craft influences the reader’s point of view.
+            </li>
+            <li>
+              Suggest ideas from a different perspective.
+            </li>
+            <li>
+              Evaluate purpose, structure and characteristics of a variety of texts and explain how they contribute to the understanding of the text.
+            </li>
+          </ul>
+        </span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]ELA_8_READ_EVA" id="selectELA_8_READ_EVA">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_8_READ_EVA)]</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Comment:</td>
+      <td>
+        <textarea name="[Students.U_PEI_FL]ELA_8_COMMENT" id="textareaELA_8_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]ELA_8_COMMENT)"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Teacher:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]ELA_8_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]ELA_8_TEACHER)">
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 School:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]ELA_8_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]ELA_8_SCHOOL)">
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Year:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]ELA_8_YEAR" class="fl_year" value="~([Students.U_PEI_FL]ELA_8_YEAR)">
+      </td>
+    </tr>
+  </table>
+</div>
+<h2>French Language Arts</h2>
+<div>
+  <table class="linkDescList">
+    <colgroup>
+      <col style="width:20%">
+      <col>
+    </colgroup>
+    <tr>
+      <td class="fl-label">8 1.2.3 D<span class="tooltiptext"></span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]FLA_8_123D" id="selectFLA_8_123D">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_8_123D)]</select>
+        </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 2.2.2 A<span class="tooltiptext"></span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]FLA_8_222A" id="selectFLA_8_222A">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_8_222A)]</select>
+        </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 2.2.3 C<span class="tooltiptext"></span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]FLA_8_223C" id="selectFLA_8_223C">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_8_223C)]</select>
+        </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 2.3.4 A<span class="tooltiptext"></span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]FLA_8_234A" id="selectFLA_8_234A">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_8_234A)]</select>
+        </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 3.1.1 H<span class="tooltiptext"></span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]FLA_8_311H" id="selectFLA_8_311H">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_8_311H)]</select>
+        </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 4.1.1 B<span class="tooltiptext"></span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]FLA_8_411B" id="selectFLA_8_411B">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_8_411B)]</select>
+        </td>
+    </tr>
+    <tr>
+      <td class="fl-label">8 4.1.2 F<span class="tooltiptext"></span>
+      </td>
+      <td>
+        <select name="[Students.U_PEI_FL]FLA_8_412F" id="selectFLA_8_412F">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]FLA_8_412F)]</select>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Comment:</td>
+      <td>
+        <textarea name="[Students.U_PEI_FL]FLA_8_COMMENT" id="textareaFLA_8_Comment" rows="5" cols="100" value="~([Students.U_PEI_FL]FLA_8_COMMENT)"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Teacher:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]FLA_8_TEACHER" class="fl_teacher" value="~([Students.U_PEI_FL]FLA_8_TEACHER)">
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 School:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]FLA_8_SCHOOL" class="fl_school" value="~([Students.U_PEI_FL]FLA_8_SCHOOL)">
+      </td>
+    </tr>
+    <tr>
+      <td class="fl-label">Gr 8 Year:</td>
+      <td>
+        <input name="[Students.U_PEI_FL]FLA_8_YEAR" class="fl_year" value="~([Students.U_PEI_FL]FLA_8_YEAR)">
+      </td>
+    </tr>
+    [/if#chkGrade]
+  </table>
+</div>
+<div class="button-row">
+  <input type="hidden" name="frn" value="~(studentfrn)">
+  <input type="hidden" name="ac" value="prim">
+  ~[submitbutton]
+</div>
+<br />
+</form>
+
+<!-- end of content area -->
+ ~[wc:admin_footer_frame_css]
+</body>
+</html>

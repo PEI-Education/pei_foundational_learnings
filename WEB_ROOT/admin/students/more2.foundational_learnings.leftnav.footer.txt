@@ -1,6 +1,6 @@
 <script>
 $j(function() {
-    $j('ul#std_academics').append('<li><a href="fl0.html?frn=~(studentfrn)">Foundational Learnings</a></li>');
+    $j('ul#std_academics').append('<li><a href="fl~(grade_level).html?frn=~(studentfrn)">Foundational Learnings</a></li>');
 
     $j("ul#std_academics li").sort(function(a, b) {
         if($j(a).text() < $j(b).text()) return -1;
