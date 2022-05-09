@@ -1,6 +1,9 @@
 <script>
 $j(function() {
-    $j('ul#std_academics').append('<li><a href="fl~(grade_level).html?frn=~(studentfrn)">Foundational Learnings</a></li>');
+    let gradeLevel = ~(grade_level) > 9 ? 9 : ~(grade_level);
+    console.log(gradeLevel);
+
+    $j('ul#std_academics').append('<li><a href="fl' + gradeLevel + '.html?frn=~(studentfrn)">Foundational Learnings</a></li>');
 
     $j("ul#std_academics li").sort(function(a, b) {
         if($j(a).text() < $j(b).text()) return -1;

@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         description="Installs FL pages on SIS and PT. Version 0.3.2 - Fixes for Math and Int ELA issues from coaches."
         name="PEI Foundational Learnings"
-        version="0.4.0"
+        version="0.4.1"
         xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
 <publisher name="DELL - Luke Walker">
   <contact email="lawalker@gov.pe.ca"/>
