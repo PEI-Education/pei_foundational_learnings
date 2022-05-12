@@ -45,8 +45,6 @@
 <field name="FLA_1_1021" type="String" length="5" comment="Foundation Learning FLA-1-10.2.1"/>
 <field name="FLA_1_1042" type="String" length="5" comment="Foundation Learning FLA-1-10.4.2"/>
 <field name="FLA_1_912" type="String" length="5" comment="Foundation Learning FLA-1-9.1.2"/>
-<field name="FLA_1_L2" type="String" length="5" comment="Foundation Learning FLA-1-L.2"/>
-<field name="FLA_1_L3" type="String" length="5" comment="Foundation Learning FLA-1-L.3"/>
 <field name="FLA_2_1021" type="String" length="5" comment="Foundation Learning FLA-2-10.2.1"/>
 <field name="FLA_2_1042" type="String" length="5" comment="Foundation Learning FLA-2-1042"/>
 <field name="FLA_2_915" type="String" length="5" comment="Foundation Learning FLA-2-9.1.5"/>
