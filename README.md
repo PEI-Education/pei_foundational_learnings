@@ -11,6 +11,7 @@ PowerSchool customization for tracking PEI's Foundational Learnings
 **PowerSchool SIS**: Same page layout as on PowerTeacher, but any FL can be modified at any time.
 
 ## Version/Release Notes
+**0.8.0**: Fixed textarea tags to handle line-breaks properly.
 **0.7.2**: Hid FLs for 7-9 FLA.
 **0.7.1**: Exposed FLs for 1-6 FLAs in the teacher interface.
 **0.7.0**: Cleanup of schema and pages for FLA FLs in prep for French data import.
