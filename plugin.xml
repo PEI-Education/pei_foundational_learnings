@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://plugin.powerschool.pearson.com"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        description="Installs FL pages on SIS and PT. Version 0.8.0 - Fixes an issue with textarea tags when user inserts a line break."
+        description="Installs FL pages on SIS and PT. Version 0.9.0 - Adds ELA Writing FLs to Grades 7 and 8."
         name="PEI Foundational Learnings"
         version="0.8.0"
         xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">

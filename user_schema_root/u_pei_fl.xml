@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+77<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <psExtension xmlns="http://www.powerschool.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.powerschool.com psextension.xsd">
     <extensionname>U_PEI_FL</extensionname>
     <extendedTable coreTable="Students" dbTableName="U_PEI_FL" comment="">
@@ -74,6 +74,9 @@
       <field name="ELA_7_READ_EVA" type="String" length="5" comment="Foundation Learning ELA Gr 7 Reading Comp - Evaluative"/>
       <field name="ELA_7_READ_INF" type="String" length="5" comment="Foundation Learning ELA Gr 7 Reading Comp - Inferential"/>
       <field name="ELA_7_READ_LIT" type="String" length="5" comment="Foundation Learning ELA Gr 7 Reading Comp - Literal"/>
+      <field name="ELA_7_WRIT_CON" type="String" length="5" comment="Foundation Learning ELA Gr 7 Writing - Conventions"/>
+      <field name="ELA_7_WRIT_IDE" type="String" length="5" comment="Foundation Learning ELA Gr 7 Writing - Ideas"/>
+      <field name="ELA_7_WRIT_ORG" type="String" length="5" comment="Foundation Learning ELA Gr 7 Writing - Organization"/>
       <field name="ELA_7_SCHOOL" type="String" length="100" comment="School for 7 ELA"/>
       <field name="ELA_7_TEACHER" type="String" length="100" comment="Teacher for 7 ELA"/>
       <field name="ELA_7_YEAR" type="String" length="100" comment="Year for 7 ELA"/>
@@ -81,6 +84,9 @@
       <field name="ELA_8_READ_EVA" type="String" length="5" comment="Foundation Learning ELA Gr 8 Reading Comp - Evaluative"/>
       <field name="ELA_8_READ_INF" type="String" length="5" comment="Foundation Learning ELA Gr 8 Reading Comp - Inferential"/>
       <field name="ELA_8_READ_LIT" type="String" length="5" comment="Foundation Learning ELA Gr 8 Reading Comp - Literal"/>
+      <field name="ELA_8_WRIT_CON" type="String" length="5" comment="Foundation Learning ELA Gr 8 Writing - Conventions"/>
+      <field name="ELA_8_WRIT_IDE" type="String" length="5" comment="Foundation Learning ELA Gr 8 Writing - Ideas"/>
+      <field name="ELA_8_WRIT_ORG" type="String" length="5" comment="Foundation Learning ELA Gr 8 Writing - Organization"/>
       <field name="ELA_8_SCHOOL" type="String" length="100" comment="School for 8 ELA"/>
       <field name="ELA_8_TEACHER" type="String" length="100" comment="Teacher for 8 ELA"/>
       <field name="ELA_8_YEAR" type="String" length="100" comment="Year for 8 ELA"/>

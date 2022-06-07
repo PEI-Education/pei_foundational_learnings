@@ -315,6 +315,87 @@
             [/if#Y]
           </td>
         </tr>
+        <tr>
+          <td><strong>Writing Traits</strong></td>
+          <td>Learners can create written <strong>multi-paragraphed</strong> texts using three of the writing traits: ideas, organization, and conventions.</td>
+        </tr>
+        <tr>
+          <td class="fl-label">Ideas
+            <span class="tooltiptext">Learners can, through writing:
+              <ul>
+                <li>
+                  Present a specific topic with main ideas.
+                </li>
+                <li>
+                  Consider purpose and audience.
+                </li>
+                <li>
+                  Include relevant details that support the topic.
+                </li>
+                <li>
+                  Incorporate useful information from resources (when applicable).
+                </li>
+              </ul>
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_8_WRIT_IDE)$"Y"]
+            ~([Students.U_PEI_FL]ELA_8_WRIT_IDE)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_8_WRIT_IDE" id="selectELA_8_WRIT_IDE">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_8_WRIT_IDE)]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Organization
+            <span class="tooltiptext">Learners can, through writing:
+              <ul>
+                <li>
+                  Produce a specific structure that matches topic, purpose and audience (see text forms on page 52 of the Curriculum Guide).
+                </li>
+                <li>
+                  Express related ideas in paragraphs using a topic sentence, supporting details and a closing sentence.
+                </li>
+                <li>
+                  Use transition words between paragraphs to show evidence of logical sequencing.
+                </li>
+              </ul>
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_8_WRIT_ORG)$"Y"]
+            ~([Students.U_PEI_FL]ELA_8_WRIT_ORG)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]ELA_8_WRIT_ORG" id="selectELA_8_WRIT_ORG">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_8_WRIT_ORG)]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">Conventions
+            <span class="tooltiptext">Learners can, through writing:
+              <ul>
+                <li>
+                  Use correct end punctuation and capitalization.
+                </li>
+                <li>
+                  Apply correct grammatical structures that make the text readable (e.g. subject/verb agreement, verb tense, numbers, apostrophes, contractions, plurals, conjunctions, punctuating of dialogue/quotes, and parts of speech).
+                </li>
+              </ul>
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]ELA_8_WRIT_CON)$"Y"]
+            ~([Students.U_PEI_FL]ELA_8_WRIT_CON)
+            [else#Y]
+
+              <select name="[Students.U_PEI_FL]ELA_8_WRIT_CON" id="selectELA_8_WRIT_CON">
+                ~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]ELA_8_WRIT_CON)]
+              </select>
+
+            [/if#Y]
+          </td>
+        </tr>
         ~[if#chkGrade.~([Students]grade_level)=8]
         <tr>
           <td class="fl-label">Gr 8 Comment:</td>
