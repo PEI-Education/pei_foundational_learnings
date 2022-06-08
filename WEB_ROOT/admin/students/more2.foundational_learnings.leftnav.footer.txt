@@ -1,7 +1,6 @@
 <script>
 $j(function() {
     let gradeLevel = ~(grade_level) > 9 ? 9 : ~(grade_level);
-    console.log(gradeLevel);
 
     $j('ul#std_academics').append('<li><a href="fl' + gradeLevel + '.html?frn=~(studentfrn)">Foundational Learnings</a></li>');
 

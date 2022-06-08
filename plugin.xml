@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://plugin.powerschool.pearson.com"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        description="Installs FL pages on SIS and PT. Version 0.9.0 - Adds ELA Writing FLs to Grades 7 and 8."
+        description="Installs FL pages on SIS and PT. Version 0.9.1 - Fixing minor issues with new ELA 7-8 FLs."
         name="PEI Foundational Learnings"
-        version="0.8.0"
+        version="0.9.1"
         xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
 <publisher name="DELL - Luke Walker">
   <contact email="lawalker@gov.pe.ca"/>
