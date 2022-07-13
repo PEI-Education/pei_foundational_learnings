@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<psExtension xmlns="http://www.powerschool.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.powerschool.com psextension.xsd">
+<psExtension  xmlns="http://www.powerschool.com" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://www.powerschool.com 2zs">
     <extensionname>U_PEI_FL</extensionname>
     <extendedTable coreTable="Students" dbTableName="U_PEI_FL" comment="">
       <field name="ELA_1_COMMENT" type="String" length="2048" comment="Comment for 1 ELA"/>
@@ -304,5 +306,32 @@
       <field name="MATH_K_SCHOOL" type="String" length="100" comment="School for K Math"/>
       <field name="MATH_K_TEACHER" type="String" length="100" comment="Teacher for K math"/>
       <field name="MATH_K_YEAR" type="String" length="100" comment="Year for K Math"/>
+      <field name="FLA_7_1" type="String" length="5" comment="Foundation Learning FLA 7.1"/>
+      <field name="FLA_7_2" type="String" length="5" comment="Foundation Learning FLA 7.2"/>
+      <field name="FLA_7_3" type="String" length="5" comment="Foundation Learning FLA 7.3"/>
+      <field name="FLA_7_4" type="String" length="5" comment="Foundation Learning FLA 7.4"/>
+      <field name="FLA_7_5" type="String" length="5" comment="Foundation Learning FLA 7.5"/>
+      <field name="FLA_7_COMMENT" type="String" length="2048" comment="Comment for 7 FLA"/>
+      <field name="FLA_7_SCHOOL" type="String" length="100" comment="School for 7 FLA"/>
+      <field name="FLA_7_TEACHER" type="String" length="100" comment="Teacher for 7 FLA"/>
+      <field name="FLA_7_YEAR" type="String" length="100" comment="Year for 7 FLA"/>
+      <field name="FLA_8_1" type="String" length="5" comment="Foundation Learning FLA 8.1"/>
+      <field name="FLA_8_2" type="String" length="5" comment="Foundation Learning FLA 8.2"/>
+      <field name="FLA_8_3" type="String" length="5" comment="Foundation Learning FLA 8.3"/>
+      <field name="FLA_8_4" type="String" length="5" comment="Foundation Learning FLA 8.4"/>
+      <field name="FLA_8_5" type="String" length="5" comment="Foundation Learning FLA 8.5"/>
+      <field name="FLA_8_COMMENT" type="String" length="2048" comment="Comment for 8 FLA"/>
+      <field name="FLA_8_SCHOOL" type="String" length="100" comment="School for 8 FLA"/>
+      <field name="FLA_8_TEACHER" type="String" length="100" comment="Teacher for 8 FLA"/>
+      <field name="FLA_8_YEAR" type="String" length="100" comment="Year for 8 FLA"/>
+      <field name="FLA_9_1" type="String" length="5" comment="Foundation Learning FLA 9.1"/>
+      <field name="FLA_9_2" type="String" length="5" comment="Foundation Learning FLA 9.2"/>
+      <field name="FLA_9_3" type="String" length="5" comment="Foundation Learning FLA 9.3"/>
+      <field name="FLA_9_4" type="String" length="5" comment="Foundation Learning FLA 9.4"/>
+      <field name="FLA_9_5" type="String" length="5" comment="Foundation Learning FLA 9.5"/>
+      <field name="FLA_9_COMMENT" type="String" length="2048" comment="Comment for 9 FLA"/>
+      <field name="FLA_9_SCHOOL" type="String" length="100" comment="School for 9 FLA"/>
+      <field name="FLA_9_TEACHER" type="String" length="100" comment="Teacher for 9 FLA"/>
+      <field name="FLA_9_YEAR" type="String" length="100" comment="Year for 9 FLA"/>
     </extendedTable>
 </psExtension>

@@ -89,17 +89,13 @@
 **Necessary on test1 right now, but not prod**
 <field name="ELA_YEAR_5" type="String" length="100" comment="Year for 5 ELA"/>
 
-**FLA FLs to be re-added once Jill confirms**
+**Intermediate FLA - no longer in use, confirmed**
 <field name="FLA_7_111A" type="String" length="5" comment="Foundation Learning FLA-7-1.1.1A"/>
 <field name="FLA_7_211D" type="String" length="5" comment="Foundation Learning FLA-7-2.1.1D"/>
 <field name="FLA_7_311C" type="String" length="5" comment="Foundation Learning FLA-7-3.1.1C"/>
 <field name="FLA_7_311G" type="String" length="5" comment="Foundation Learning FLA-7-3.1.1G"/>
 <field name="FLA_7_323C" type="String" length="5" comment="Foundation Learning FLA-7-3.2.3C"/>
 <field name="FLA_7_412A" type="String" length="5" comment="Foundation Learning FLA-7-4.1.2A"/>
-<field name="FLA_7_COMMENT" type="String" length="2048" comment="Comment for 7 FLA"/>
-<field name="FLA_7_SCHOOL" type="String" length="100" comment="School for 7 FLA"/>
-<field name="FLA_7_TEACHER" type="String" length="100" comment="Teacher for 7 FLA"/>
-<field name="FLA_7_YEAR" type="String" length="100" comment="Year for 7 FLA"/>
 <field name="FLA_8_123D" type="String" length="5" comment="Foundation Learning FLA-8-1.2.3D"/>
 <field name="FLA_8_222A" type="String" length="5" comment="Foundation Learning FLA-8-2.2.2A"/>
 <field name="FLA_8_223C" type="String" length="5" comment="Foundation Learning FLA-8-2.2.3C"/>
@@ -107,17 +103,9 @@
 <field name="FLA_8_311H" type="String" length="5" comment="Foundation Learning FLA-8-3.1.1H"/>
 <field name="FLA_8_411B" type="String" length="5" comment="Foundation Learning FLA-8-4.1.1B"/>
 <field name="FLA_8_412F" type="String" length="5" comment="Foundation Learning FLA-8-4.1.2F"/>
-<field name="FLA_8_COMMENT" type="String" length="2048" comment="Comment for 8 FLA"/>
-<field name="FLA_8_SCHOOL" type="String" length="100" comment="School for 8 FLA"/>
-<field name="FLA_8_TEACHER" type="String" length="100" comment="Teacher for 8 FLA"/>
-<field name="FLA_8_YEAR" type="String" length="100" comment="Year for 8 FLA"/>
 <field name="FLA_9_111E" type="String" length="5" comment="Foundation Learning FLA-9-1.1.1E"/>
 <field name="FLA_9_211F" type="String" length="5" comment="Foundation Learning FLA-9-2.1.1F"/>
 <field name="FLA_9_224" type="String" length="5" comment="Foundation Learning FLA-9-2.2.4"/>
 <field name="FLA_9_312A" type="String" length="5" comment="Foundation Learning FLA-9-3.1.2A"/>
 <field name="FLA_9_413A" type="String" length="5" comment="Foundation Learning FLA-9-4.1.3A"/>
 <field name="FLA_9_413D" type="String" length="5" comment="Foundation Learning FLA-9-4.1.3D"/>
-<field name="FLA_9_COMMENT" type="String" length="2048" comment="Comment for 9 FLA"/>
-<field name="FLA_9_SCHOOL" type="String" length="100" comment="School for 9 FLA"/>
-<field name="FLA_9_TEACHER" type="String" length="100" comment="Teacher for 9 FLA"/>
-<field name="FLA_9_YEAR" type="String" length="100" comment="Year for 9 FLA"/>
