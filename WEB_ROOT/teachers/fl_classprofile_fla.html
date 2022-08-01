@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Profile - French Language Arts</title>
+<!-- required scripts -->
+	~[wc:commonscripts] 
+<!-- Required style sheets: screen.css, and print.css -->
+	<link href="/images/css/screen.css" rel="stylesheet" media="screen">
+	<link href="/images/css/print.css" rel="stylesheet" media="print">
+	<style>
+    	@media print {
+            .no-print{
+               display : none !important;
+            }
+        }
+        
+        @media screen {
+/* Cause the hreader row of the class profile table to stick to the top of the page when scrolling through a long list */
+            .sticky {
+                position: relative;
+            }
+            
+            .sticky th {
+                position: sticky;
+                top: 0;
+            }
+        }
+        
+/* used to highlight cells containing Ns */
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+	</style>
+    <script>
+/* function adds no-print to everyelement on the page except those we want to print, and then calls the print function  */
+    function printReport(printDiv)
+    {
+         $j("*").addClass("no-print");
+         $j(printDiv + " *").removeClass("no-print");
+         $j(printDiv).removeClass("no-print");
+        
+         parent =  $j(printDiv).parent();
+             while($j(parent).length)
+             {
+             $j(parent).removeClass("no-print");
+             parent =  $j(parent).parent();
+         }
+         window.print();
+    }
+    </script>
+</head>
+<body>
+
+~[wc:teachers_header_fr_css]
+
+ <h1>Class Profile - French Language Arts</h1>
+
+<div class="tabs">
+    <ul>
+      <li><a href="#tabOneContent">K to 3</a></li>
+      <li><a href="#tabTwoContent">4 to 6</a></li>
+      <li><a href="#tabThreeContent">7 to 9</a></li>
+    </ul>
+	<div class="box-round"  id="tabOneContent">
+        <h3>French Grades K-3 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabOneContent')" class="button" style="float:right;">Print Report</a></h3>
+	    <table class="grid sticky">    
+	       <thead>
+          <tr>
+            <th colspan="2">Student</th>
+            <th colspan="7">Kindergarten</th>
+            <th colspan="7">Grade 1</th> 
+            <th colspan="6">Grade 2</th>
+            <th colspan="6">Grade 3</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>21</th>
+            <th>31</th> 
+            <th>41</th>
+            <th>51</th>
+            <th>62</th>
+            <th>71</th>
+            <th>91</th>
+            <th>CO0</th>
+            <th>CO2</th>
+            <th>CO5</th>
+            <th>L2</th>
+            <th>L3</th>
+            <th>L4</th>
+            <th>E2</th>
+            <th>CO2</th>
+            <th>CO5</th>
+            <th>L2</th>
+            <th>L3</th>
+            <th>L4</th>
+            <th>E2</th>
+            <th>CO2</th>
+            <th>CO5</th>
+            <th>L2</th>
+            <th>L3</th>
+            <th>L4</th>
+            <th>E2</th>
+        </tr>
+	        </thead> 
+          <tbody>
+          ~[tlist_sql;
+            select
+              s.id,
+              s.lastfirst,
+              s.student_number,
+              fl.FLA_K_21,
+              fl.FLA_K_31,
+              fl.FLA_K_41,
+              fl.FLA_K_51,
+              fl.FLA_K_62,
+              fl.FLA_K_71,
+              fl.FLA_K_91,
+              fl.FLA_1_CO0,
+              fl.FLA_1_CO2,
+              fl.FLA_1_CO5,
+              fl.FLA_1_L2,
+              fl.FLA_1_L3,
+              fl.FLA_1_L4,
+              fl.FLA_1_E2,
+              fl.FLA_2_CO2,
+              fl.FLA_2_CO5,
+              fl.FLA_2_L2,
+              fl.FLA_2_L3,
+              fl.FLA_2_L4,
+              fl.FLA_2_E2,
+              fl.FLA_3_CO2,
+              fl.FLA_3_CO5,
+              fl.FLA_3_L2,
+              fl.FLA_3_L3,
+              fl.FLA_3_L4,
+              fl.FLA_3_E2
+            from cc
+            join students s
+                on s.id=cc.studentid
+            left join U_PEI_FL fl
+                on fl.studentsdcid=s.dcid
+            where
+                s.schoolid = ~(curschoolid)
+	            AND cc.sectionid = ~[gpv:sectionid]
+	        order by lastfirst asc;alternatecolor;nonemessage='<div class="feedback-alert">Database query returned no results.</div>']
+        <tr>
+            <td><a href="/teachers/studentpages/fl0.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+            <td>~(studentnum)</td>
+            <td>~(K_21)</td>
+            <td>~(K_31)</td>
+            <td>~(K_41)</td>
+            <td>~(K_51)</td>
+            <td>~(K_62)</td>
+            <td>~(K_71)</td>
+            <td>~(K_91)</td>
+            <td>~(1_CO0)</td>
+            <td>~(1_CO2)</td>
+            <td>~(1_CO5)</td>
+            <td>~(1_L2)</td>
+            <td>~(1_L3)</td>
+            <td>~(1_L4)</td>
+            <td>~(1_E2)</td>
+            <td>~(2_CO2)</td>
+            <td>~(2_CO5)</td>
+            <td>~(2_L2)</td>
+            <td>~(2_L3)</td>
+            <td>~(2_L4)</td>
+            <td>~(2_E2)</td>
+            <td>~(3_CO2)</td>
+            <td>~(3_CO5)</td>
+            <td>~(3_L2)</td>
+            <td>~(3_L3)</td>
+            <td>~(3_L4)</td>
+            <td>~(3_E2)</td>
+          </tr>
+          [/tlist_sql]
+        </tbody>
+	    </table>
+	</div>
+    <div id="tabTwoContent">
+        <h3>French Grades 4-6 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabTwoContent')" class="button" style="float:right;">Print Report</a></h3>
+	    
+	    <table class="grid sticky">    
+	       <thead>
+          <tr>
+            <th colspan="2">Student</th>
+            <th colspan="6">Grade 4</th>
+            <th colspan="6">Grade 5</th>
+            <th colspan="6">Grade 6</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>CO2</th>
+            <th>CO5</th>
+            <th>L2</th>
+            <th>L3</th>
+            <th>L4</th>
+            <th>E2</th>
+            <th>CO2</th>
+            <th>CO5</th>
+            <th>L2</th>
+            <th>L3</th>
+            <th>L4</th>
+            <th>E2</th>
+            <th>CO2</th>
+            <th>CO5</th>
+            <th>L2</th>
+            <th>L3</th>
+            <th>L4</th>
+            <th>E2</th>
+        </tr>
+	       </thead> 
+           <tbody> 
+            ~[tlist_sql;
+                select
+                    s.id,
+                    s.lastfirst,
+                    s.student_number,
+                    fl.FLA_4_CO2,
+                    fl.FLA_4_CO5,
+                    fl.FLA_4_L2,
+                    fl.FLA_4_L3,
+                    fl.FLA_4_L4,
+                    fl.FLA_4_E2,
+                    fl.FLA_5_CO2,
+                    fl.FLA_5_CO5,
+                    fl.FLA_5_L2,
+                    fl.FLA_5_L3,
+                    fl.FLA_5_L4,
+                    fl.FLA_5_E2,
+                    fl.FLA_6_CO2,
+                    fl.FLA_6_CO5,
+                    fl.FLA_6_L2,
+                    fl.FLA_6_L3,
+                    fl.FLA_6_L4,
+                    fl.FLA_6_E2
+
+                from cc
+                join students s
+                    on s.id=cc.studentid
+                left join U_PEI_FL fl
+                    on fl.studentsdcid=s.dcid
+                where
+                    s.schoolid = ~(curschoolid)
+    	            AND cc.sectionid = ~[gpv:sectionid]
+    	        order by lastfirst asc;alternatecolor;nonemessage='<div class="feedback-alert">Database query returned no results.</div>']
+               <tr>
+                <td><a href="/teachers/studentpages/fl4.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+                <td>~(studentnum)</td>
+                <td>~(4_CO2)</td>
+                <td>~(4_CO5)</td>
+                <td>~(4_L2)</td>
+                <td>~(4_L3)</td>
+                <td>~(4_L4)</td>
+                <td>~(4_E2)</td>
+                <td>~(5_CO2)</td>
+                <td>~(5_CO5)</td>
+                <td>~(5_L2)</td>
+                <td>~(5_L3)</td>
+                <td>~(5_L4)</td>
+                <td>~(5_E2)</td>
+                <td>~(6_CO2)</td>
+                <td>~(6_CO5)</td>
+                <td>~(6_L2)</td>
+                <td>~(6_L3)</td>
+                <td>~(6_L4)</td>
+                <td>~(6_E2)</td>             
+            </tr>
+            [/tlist_sql]
+            </tbody>
+	    </table>
+    </div>
+    <div id="tabThreeContent">
+	    <h3>French Grades 7-9 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabThreeContents')" class="button" style="float:right;">Print Report</a></h3>
+	    
+	    <table class="grid sticky">    
+	       <thead>
+            <tr>
+              <th colspan="2">Student</th>
+              <th colspan="5">Grade 7</th> <!-- Update grade levels and the number of columns each grade should span (# of FLs) -->
+              <th colspan="5">Grade 8</th>
+              <th colspan="5">Grade 9</th>
+          </tr>
+          <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+          </tr>
+	       </thead>
+           <tbody> 
+            ~[tlist_sql;
+                select
+                    s.id,
+                    s.lastfirst,
+                    s.student_number,
+                    fl.FLA_7_1,
+                    fl.FLA_7_2,
+                    fl.FLA_7_3,
+                    fl.FLA_7_4,
+                    fl.FLA_7_5,
+                    fl.FLA_8_1,
+                    fl.FLA_8_2,
+                    fl.FLA_8_3,
+                    fl.FLA_8_4,
+                    fl.FLA_8_5,
+                    fl.FLA_9_1,
+                    fl.FLA_9_2,
+                    fl.FLA_9_3,
+                    fl.FLA_9_4,
+                    fl.FLA_9_5
+                from cc
+                join students s
+                    on s.id=cc.studentid
+                left join U_PEI_FL fl
+                    on fl.studentsdcid=s.dcid
+                where
+                    s.schoolid = ~(curschoolid)
+    	            AND cc.sectionid = ~[gpv:sectionid]
+    	        order by lastfirst asc
+            ;alternatecolor;nonemessage='<div class="feedback-alert">Database query returned no results.</div>']
+            <tr>
+              <td><a href="/teachers/studentpages/fl7.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+              <td>~(studentnum)</td>
+              <td>~(7_1)</td>
+              <td>~(7_2)</td>
+              <td>~(7_3)</td>
+              <td>~(7_4)</td>
+              <td>~(7_5)</td>
+              <td>~(8_1)</td>
+              <td>~(8_2)</td>
+              <td>~(8_3)</td>
+              <td>~(8_4)</td>
+              <td>~(8_5)</td>
+              <td>~(9_1)</td>
+              <td>~(9_2)</td>
+              <td>~(9_3)</td>
+              <td>~(9_4)</td>
+              <td>~(9_5)</td>
+            </tr>
+            [/tlist_sql]
+            </tbody>
+	    </table>
+    </div>
+</div>
+	 
+<!-- end of content area -->
+~[wc:teachers_footer_fr_css]
+
+<script>
+/* script to colour N's in red and make them bold */
+    let cells = document.getElementsByTagName("td");
+    for (let i = 0; i < cells.length; i++) {
+        if (cells[i].innerHTML == "N") {
+            cells[i].classList.add("red");
+        }
+    }
+</script>
+</body>
+</html>

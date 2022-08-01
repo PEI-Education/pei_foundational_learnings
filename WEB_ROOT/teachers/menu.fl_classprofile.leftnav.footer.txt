@@ -1,0 +1,7 @@
+  ~[if#PSBonly.~(curschoolid)<500]
+  <br />
+  <b>Class Profiles</b><br />
+  <a href="fl_classprofile_ela.html?sectionid=~[gpv:sectionid]&frn=~(frn)">English Language Arts</a><br />
+  <a href="fl_classprofile_fla.html?sectionid=~[gpv:sectionid]&frn=~(frn)">French Language Arts</a><br />
+  <a href="fl_classprofile_ma.html?sectionid=~[gpv:sectionid]&frn=~(frn)">Mathematics</a>
+  [/if]
