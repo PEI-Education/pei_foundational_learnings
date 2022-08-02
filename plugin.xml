@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://plugin.powerschool.pearson.com"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        description="Installs FL pages on SIS and PT. Version 0.9.6 - Adds Profile Report to Admin"
+        description="Installs FL pages on SIS and PT. Version 1.0 - production-ready"
         name="PEI Foundational Learnings"
-        version="0.9.7"
+        version="1.0"
         xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
 <publisher name="DELL - Luke Walker">
   <contact email="lawalker@gov.pe.ca"/>
