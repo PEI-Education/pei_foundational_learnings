@@ -1,0 +1,37 @@
+~[if.~(curschoolid)<500]
+<div class="hide">
+	<table class="linkDescList" id="peiFlReports">
+		<colgroup>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Foundational Learning Reports</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+		<!--
+		    <tr>
+		        <td><a href="fl_profile_ela.html">English Language Ars Profile</a></td>
+		        <td>Returns ELA Foundational Learning status for current selection of students</td>
+		    </tr>
+		-->
+			<tr>
+				<td><a href="fl_profile_fla.html">French Language Arts Profile</a></td>
+				<td>Returns FLA Foundational Learning status for current selection of students</td>
+
+			</tr>
+			<tr>
+				<td><a href="fl_profile_ma.html">Mathematics Profile</a></td>
+				<td>Returns Math Foundational Learning status for current selection of students</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script type="text/javascript">
+	$j('.box-round').find('table').last().after($j('#peiFlReports'));
+	$j('.hide').hide();
+</script>
+[/if]

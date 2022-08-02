@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Class Profile - French Language Arts</title>
+	<title>Foundational Learnings - FLA Profile</title>
 <!-- required scripts -->
 	~[wc:commonscripts] 
 <!-- Required style sheets: screen.css, and print.css -->
@@ -15,7 +15,7 @@
         }
         
         @media screen {
-/* Cause the hreader row of the class profile table to stick to the top of the page when scrolling through a long list */
+/* Cause the header row of the class profile table to stick to the top of the page when scrolling through a long list */
             .sticky {
                 position: relative;
             }
@@ -33,7 +33,7 @@
         }
 	</style>
     <script>
-/* function adds no-print to everyelement on the page except those we want to print, and then calls the print function  */
+/* function adds no-print to every element on the page except those we want to print, and then calls the print function  */
     function printReport(printDiv)
     {
          $j("*").addClass("no-print");
@@ -51,19 +51,21 @@
     </script>
 </head>
 <body>
-
-~[wc:teachers_header_fr_css]
-
- <h1>Class Profile - French Language Arts</h1>
-
+    ~[wc:admin_header_css] 
+    <!-- breadcrumb start --><a href="/admin/home.html" target="_top">~[text:psx.html.admin_students.previousgrades.start_page]</a> &gt; <a href="home.html?selectstudent=nosearch" target="_top">~[text:psx.html.admin_students.previousgrades.student_selection]</a> &gt; FL ELA Profile<!-- breadcrumb end --> 
+<!-- start of main menu and content --> 
+    ~[wc:admin_navigation_css] 
+<!-- Start of Page --> 
+ <h1>Foundational Learnings - French Language Arts Profile</h1>
+<!-- start of content area --> 
 <div class="tabs">
     <ul>
-      <li><a href="#tabOneContent">K to 3</a></li>
-      <li><a href="#tabTwoContent">4 to 6</a></li>
-      <li><a href="#tabThreeContent">7 to 9</a></li>
+      <li><a href="#tabk3">K to 3</a></li>
+      <li><a href="#tab46">4 to 6</a></li>
+      <li><a href="#tab79">7 to 9</a></li>
     </ul>
 	<div class="box-round"  id="tabOneContent">
-        <h3>French Grades K-3 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabOneContent')" class="button" style="float:right;">Print Report</a></h3>
+        <h3>French Language Arts Grades K-3 Profile<a href="#" onclick="printReport('#tabk3')" class="button" style="float:right;">Print Report</a></h3>
 	    <table class="grid sticky">    
 	       <thead>
           <tr>
@@ -136,17 +138,15 @@
               fl.FLA_3_L3,
               fl.FLA_3_L4,
               fl.FLA_3_E2
-            from cc
-            join students s
-                on s.id=cc.studentid
-            left join U_PEI_FL fl
-                on fl.studentsdcid=s.dcid
-            where
-                s.schoolid = ~(curschoolid)
-	            AND cc.sectionid = ~[gpv:sectionid]
-	        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+        from students s
+        left join U_PEI_FL fl
+            on fl.studentsdcid=s.dcid
+        where
+            s.dcid in (select dcid from ~[temp.table.current.selection:students])
+            ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
         <tr>
-            <td><a href="/teachers/studentpages/fl0.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+            <td><a href="/admin/students/fl0.html?frn=001~(id)">~(lfname)</a></td>
             <td>~(studentnum)</td>
             <td>~(K_21)</td>
             <td>~(K_31)</td>
@@ -179,8 +179,8 @@
         </tbody>
 	    </table>
 	</div>
-    <div id="tabTwoContent">
-        <h3>French Grades 4-6 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabTwoContent')" class="button" style="float:right;">Print Report</a></h3>
+    <div id="tab46">
+        <h3>French Language Arts Grades 4-6 Profile<a href="#" onclick="printReport('#tab46')" class="button" style="float:right;">Print Report</a></h3>
 	    
 	    <table class="grid sticky">    
 	       <thead>
@@ -237,18 +237,15 @@
                     fl.FLA_6_L3,
                     fl.FLA_6_L4,
                     fl.FLA_6_E2
-
-                from cc
-                join students s
-                    on s.id=cc.studentid
-                left join U_PEI_FL fl
-                    on fl.studentsdcid=s.dcid
-                where
-                    s.schoolid = ~(curschoolid)
-    	            AND cc.sectionid = ~[gpv:sectionid]
-    	        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+                    from students s
+                    left join U_PEI_FL fl
+                        on fl.studentsdcid=s.dcid
+                    where
+                        s.dcid in (select dcid from ~[temp.table.current.selection:students])
+                        ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+                    order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
                <tr>
-                <td><a href="/teachers/studentpages/fl4.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+                <td><a href="/admin/students/fl4.html?frn=001~(id)">~(lfname)</a></td>
                 <td>~(studentnum)</td>
                 <td>~(4_CO2)</td>
                 <td>~(4_CO5)</td>
@@ -273,14 +270,14 @@
             </tbody>
 	    </table>
     </div>
-    <div id="tabThreeContent">
-	    <h3>French Grades 7-9 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabThreeContents')" class="button" style="float:right;">Print Report</a></h3>
+    <div id="tab79">
+	    <h3>French Language Arts Grades 7-9 Profile<a href="#" onclick="printReport('#tab79')" class="button" style="float:right;">Print Report</a></h3>
 	    
 	    <table class="grid sticky">    
 	       <thead>
             <tr>
               <th colspan="2">Student</th>
-              <th colspan="5">Grade 7</th> <!-- Update grade levels and the number of columns each grade should span (# of FLs) -->
+              <th colspan="5">Grade 7</th> 
               <th colspan="5">Grade 8</th>
               <th colspan="5">Grade 9</th>
           </tr>
@@ -325,18 +322,15 @@
                     fl.FLA_9_3,
                     fl.FLA_9_4,
                     fl.FLA_9_5
-                from cc
-                join students s
-                    on s.id=cc.studentid
+                from students s
                 left join U_PEI_FL fl
                     on fl.studentsdcid=s.dcid
                 where
-                    s.schoolid = ~(curschoolid)
-    	            AND cc.sectionid = ~[gpv:sectionid]
-    	        order by lastfirst asc
-            ;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+                    s.dcid in (select dcid from ~[temp.table.current.selection:students])
+                    ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+                order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
             <tr>
-              <td><a href="/teachers/studentpages/fl7.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+              <td><a href="/admin/students/fl7.html?frn=001~(id)">~(lfname)</a></td>
               <td>~(studentnum)</td>
               <td>~(7_1)</td>
               <td>~(7_2)</td>
@@ -361,7 +355,7 @@
 </div>
 	 
 <!-- end of content area -->
-~[wc:teachers_footer_fr_css]
+~[wc:admin_footer_css] 
 
 <script>
 /* script to colour N's in red and make them bold */

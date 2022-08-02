@@ -16,9 +16,10 @@ PowerSchool customization for tracking PEI's Foundational Learnings
 - Broken down by subject, and into manageable chunks by putting K-3, 4-6, and 7-9 on separate tabs.
 - Printable: Using the Print Report button the upper right, only table will print (normal print leaves some PS header info)
   
-**PowerSchool SIS**: Same page layout as on PowerTeacher, but any FL can be modified at any time.
+**PowerSchool SIS**: Same page layout as on PowerTeacher, but any FL can be modified at any time. Profile reports are linke from main tab on System Reports page.
 
 ## Version/Release Notes
+  - **0.9.6**: Added Math, ELA and FLA Profiles to Admin.
   - **0.9.5**: Added Mathematics, ELA and FLA Class Profiles to PowerTeacher, with sticky header, highlighting of N, and links back to students' individual profiles for easy access to comments.
   - **0.9.0**: Added ELA Writing FLs to Grades 7 and 8.
   - **0.8.0**: Fixed textarea tags to handle line-breaks properly.

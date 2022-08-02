@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Class Profile - Mathematics</title>
+	<title>Foundational Learnings - Math Profile</title>
 <!-- required scripts -->
 	~[wc:commonscripts] 
 <!-- Required style sheets: screen.css, and print.css -->
@@ -52,19 +52,21 @@
     </script>
 </head>
 <body>
-
-~[wc:teachers_header_fr_css]
-
- <h1>Class Profile - Mathematics</h1>
+    ~[wc:admin_header_css] 
+    <!-- breadcrumb start --><a href="/admin/home.html" target="_top">~[text:psx.html.admin_students.previousgrades.start_page]</a> &gt; <a href="home.html?selectstudent=nosearch" target="_top">~[text:psx.html.admin_students.previousgrades.student_selection]</a> &gt; FL ELA Profile<!-- breadcrumb end --> 
+<!-- start of main menu and content --> 
+    ~[wc:admin_navigation_css] 
+<!-- Start of Page --> 
+ <h1>Foundational Learnings - Mathematics Profile</h1>
 
 <div class="tabs">
     <ul>
-      <li><a href="#tabOneContent">K to 3</a></li>
-      <li><a href="#tabTwoContent">4 to 6</a></li>
-      <li><a href="#tabThreeContent">7 to 9</a></li>
+      <li><a href="#tabk3">K to 3</a></li>
+      <li><a href="#tab46">4 to 6</a></li>
+      <li><a href="#tab79">7 to 9</a></li>
     </ul>
-	<div class="box-round"  id="tabOneContent">
-        <h3>Math Grades K-3 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabOneContent')" class="button" style="float:right;">Print Report</a></h3>
+	<div class="box-round"  id="tabk3">
+        <h3>Mathematics Grades K-3 Profile<a href="#" onclick="printReport('#tabk3')" class="button" style="float:right;">Print Report</a></h3>
 	    <table class="grid sticky">    
 	       <thead>
 	           <tr>
@@ -149,17 +151,15 @@
                 fl.math_3_n12,
                 fl.math_3_pr2_rr2,
                 fl.math_3_ss5_fe5
-            from cc
-            join students s
-                on s.id=cc.studentid
-            left join U_PEI_FL fl
-                on fl.studentsdcid=s.dcid
-            where
-                s.schoolid = ~(curschoolid)
-	            AND cc.sectionid = ~[gpv:sectionid]
-	        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+                from students s
+        left join U_PEI_FL fl
+            on fl.studentsdcid=s.dcid
+        where
+            s.dcid in (select dcid from ~[temp.table.current.selection:students])
+            ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
         <tr>
-            <td><a href="/teachers/studentpages/fl0.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+            <td><a href="/admin/students/fl0.html?frn=001~(id)">~(lfname)</a></td>
             <td>~(studentnum)</td>
             <td>~(k_11)</td>
             <td>~(k_12)</td>
@@ -198,8 +198,8 @@
             </tbody>
 	    </table>
 	</div>
-    <div id="tabTwoContent">
-        <h3>Math Grades 4-6 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabTwoContent')" class="button" style="float:right;">Print Report</a></h3>
+    <div id="tab46">
+        <h3>Mathematics Grades 4-6 Profile<a href="#" onclick="printReport('#tab46')" class="button" style="float:right;">Print Report</a></h3>
 	    
 	    <table class="grid sticky">    
 	       <thead>
@@ -266,17 +266,15 @@
                     fl.math_6_SS1_FE1,
                     fl.math_6_SS3_FE3,
                     fl.math_6_sp1
-                from cc
-                join students s
-                    on s.id=cc.studentid
-                left join U_PEI_FL fl
-                    on fl.studentsdcid=s.dcid
-                where
-                    s.schoolid = ~(curschoolid)
-    	            AND cc.sectionid = ~[gpv:sectionid]
-    	        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
-               <tr>
-                <td><a href="/teachers/studentpages/fl4.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+            from students s
+            left join U_PEI_FL fl
+                on fl.studentsdcid=s.dcid
+            where
+                s.dcid in (select dcid from ~[temp.table.current.selection:students])
+                ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+            order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+            <tr>
+                <td><a href="/admin/students/fl0.html?frn=001~(id)">~(lfname)</a></td>
                 <td>~(studentnum)</td>
                 <td>~(4_n1)</td>
                 <td>~(4_n3)</td>
@@ -306,8 +304,8 @@
             </tbody>
 	    </table>
     </div>
-    <div id="tabThreeContent">
-	    <h3>Math Grades 7-9 Class Profile for ~([Sections]course_number)-~([Sections]section_number)<a href="#" onclick="printReport('#tabThreeContents')" class="button" style="float:right;">Print Report</a></h3>
+    <div id="tab79">
+	    <h3>Mathematics Grades 7-9 Profile<a href="#" onclick="printReport('#tab79')" class="button" style="float:right;">Print Report</a></h3>
 	    
 	    <table class="grid sticky">    
 	       <thead>
@@ -370,18 +368,15 @@
                     fl.math_9_PR3_RR3,
                     fl.math_9_PR6_RR6,
                     fl.math_9_PR7_RR7
-                from cc
-                join students s
-                    on s.id=cc.studentid
-                left join U_PEI_FL fl
-                    on fl.studentsdcid=s.dcid
-                where
-                    s.schoolid = ~(curschoolid)
-    	            AND cc.sectionid = ~[gpv:sectionid]
-    	        order by lastfirst asc
-            ;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+            from students s
+            left join U_PEI_FL fl
+                on fl.studentsdcid=s.dcid
+            where
+                s.dcid in (select dcid from ~[temp.table.current.selection:students])
+                ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+            order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
             <tr>
-                <td><a href="/teachers/studentpages/fl7.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+                <td><a href="/admin/students/fl0.html?frn=001~(id)">~(lfname)</a></td>
                 <td>~(studentnum)</td>
                 <td>~(7_n5)</td>
                 <td>~(7_n6)</td>
@@ -412,7 +407,7 @@
 </div>
 	 
 <!-- end of content area -->
-~[wc:teachers_footer_fr_css]
+~[wc:admin_footer_css] 
 
 <script>
 /* script to colour N's in red and make them bold */
