@@ -12,12 +12,10 @@
 			</tr>
 		</thead>
 		<tbody>
-		<!--
-		    <tr>
-		        <td><a href="fl_profile_ela.html">English Language Ars Profile</a></td>
-		        <td>Returns ELA Foundational Learning status for current selection of students</td>
-		    </tr>
-		-->
+			<tr>
+					<td><a href="fl_profile_ela.html">English Language Ars Profile</a></td>
+					<td>Returns ELA Foundational Learning status for current selection of students</td>
+			</tr>
 			<tr>
 				<td><a href="fl_profile_fla.html">French Language Arts Profile</a></td>
 				<td>Returns FLA Foundational Learning status for current selection of students</td>
