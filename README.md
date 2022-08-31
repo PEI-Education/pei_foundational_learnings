@@ -19,6 +19,7 @@ PowerSchool customization for tracking PEI's Foundational Learnings
 **PowerSchool SIS**: Same page layout as on PowerTeacher, but any FL can be modified at any time. Profile reports are linke from main tab on System Reports page.
 
 ## Version/Release Notes
+  - **1.0.1**: Updated tab IDs for printing.
   - **1.0**: Fixed runreports page fragment issue. Ready to install on production.
   - **0.9.6**: Added Math, ELA and FLA Profiles to Admin.
   - **0.9.5**: Added Mathematics, ELA and FLA Class Profiles to PowerTeacher, with sticky header, highlighting of N, and links back to students' individual profiles for easy access to comments.
