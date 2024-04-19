@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    ~[if.~(grade_level)>9]
+        <meta http-equiv="refresh" content="0; url='fl9.html?frn=~(studentfrn)" />
+    [else]
+        <meta http-equiv="refresh" content="0; url='fl~(grade_level).html?frn=~(studentfrn)" />
+    [/if]
+  <title>~[text:psx.htmlc.teachers.studentpages.foundational_learnings.foundational_learnings]</title>
+  <!-- required scripts -->
+  ~[wc:commonscripts]
+  <!-- Required style sheets: screen.css, and print.css -->
+  <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+  <link href="/images/css/print.css" rel="stylesheet" media="print">
+  <link href="/images/css/fls.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+  ~[wc:admin_header_frame_css]
+  <!-- breadcrumb start -->
+  <a href="/admin/home.html" target="_top">Start Page</a> &gt; <a href="/admin/students/home.html?selectstudent=nosearch" target="_top">Student Selection</a> &gt; Foundational Learnings
+  <!-- breadcrumb end -->
+  ~[wc:admin_navigation_frame_css]
+  <!-- start of main menu and content -->
+  ~[wc:title_student_begin_css]Foundational Learnings~[wc:title_student_end_css]
+    ~[if#cslfCheck.~(curschoolid)>500]
+    This page is not used in CSLF schools.
+    [else#cslfCheck]
+    <!-- start of content area -->
+    <ul class="tabs shown_tabs">
+      <li><a href="fl0.html?frn=~(studentfrn)">K</a></li>
+      <li><a href="fl1.html?frn=~(studentfrn)">1</a></li>
+      <li><a href="fl2.html?frn=~(studentfrn)">2</a></li>
+      <li><a href="fl3.html?frn=~(studentfrn)">3</a></li>
+      <li><a href="fl4.html?frn=~(studentfrn)">4</a></li>
+      <li><a href="fl5.html?frn=~(studentfrn)">5</a></li>
+      <li><a href="fl6.html?frn=~(studentfrn)">6</a></li>
+      <li><a href="fl7.html?frn=~(studentfrn)">7</a></li>
+      <li><a href="fl8.html?frn=~(studentfrn)">8</a></li>
+      <li><a href="fl9.html?frn=~(studentfrn)">9</a></li>
+    </ul>
+    [/if#cslfCheck]
+    <div class="box-round">
+      <p>Redirecting you to the appropriate page. If you are not automatically redirected, click on the apprpriate grade level tab above.</p>
+    </div>
+    <br />
+  <!-- end of content area -->
+  ~[wc:admin_footer_frame_css]
+</body>
+
+</html>

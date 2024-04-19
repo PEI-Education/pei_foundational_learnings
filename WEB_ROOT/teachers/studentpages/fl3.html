@@ -70,7 +70,8 @@
   </ul>
 
   ~[if.~(gpv.changesSaved)=true]<div class="feedback-confirm">~[text:psx.common.changes_recorded]</div>[/if]
-
+  <div class="feedback-caution">Any outcomes marked Y or Y* will be locked when you press Submit. You must contact your Principal or Vice-Principal to change the value of a Y or Y*.</div>
+  
   <form class="fl_form" action="/teachers/studentpages/fl3.html?frn=~(studentfrn)&changesSaved=true" method="POST">
     <h2>Mathematics</h2>
     <div>
@@ -254,6 +255,52 @@
 
       </table>
     </div>
+    
+    <div class="box-round">
+        <h3>Grade 3 Mathematics School-based Assessment</h3>
+        <table class="linkDescList">
+            <colgroup>
+                <col style="width:20%;">
+                <col>
+            </colgroup>
+            ~[if#chkGrade.~([Students]grade_level)=3]
+            <tr>
+                <td class="fl-label">Assessment Date</td>
+                <td><input type="text" class="psDateWidget" data-maxDate="today" value="~[date]" name="[Students.U_PEI_ASSESS]GR3_MAT_DATE" id="dateGR3_MAT_DATE" /></td>
+            </tr>
+            <tr>
+                <td class="fl-label">Number</td>
+                <td><select name="[Students.U_PEI_ASSESS]GR3_MAT_NUMBER" id="selectGR3_MAT_NUMBER">~[x:codesetoptions;codetype=SchBasedAssessment;includeblank;value=~([Students.U_PEI_ASSESS]GR3_MAT_NUMBER)]</select></td>
+            </tr>
+            <tr>
+                <td class="fl-label">Shape & Space</td>
+                <td><select name="[Students.U_PEI_ASSESS]GR3_MAT_SHAPESPACE" id="selectGR3_MAT_SHAPESPACE">~[x:codesetoptions;codetype=SchBasedAssessment;includeblank;value=~([Students.U_PEI_ASSESS]GR3_MAT_SHAPESPACE)]</select></td>
+            </tr>
+            <tr>
+                <td class="fl-label">Overall</td>
+                <td><select name="[Students.U_PEI_ASSESS]GR3_MAT_OVERALL" id="selectGR3_MAT_OVERALL">~[x:codesetoptions;codetype=SchBasedAssessment;includeblank;value=~([Students.U_PEI_ASSESS]GR3_MAT_OVERALL)]</select></td>
+            </tr>
+            [else#chkGrade]
+            <tr>
+                <td class="fl-label">Assessment Date</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_DATE)</td>
+            </tr>
+            <tr>
+                <td class="fl-label">Number</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_NUMBER)</td>
+            </tr>
+            <tr>
+                <td class="fl-label">Shape & Space</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_SHAPESPACE)</td>
+            </tr>
+            <tr>
+                <td class="fl-label">Overall</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_OVERALL)</td>
+            </tr>
+            [/if#chkGrade]
+        </table>
+    </div>
+    
     <h2>English Language Arts</h2>
     <div>
       <table class="linkDescList">
@@ -578,3 +625,4 @@
 </body>
 
 </html>
+eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttte

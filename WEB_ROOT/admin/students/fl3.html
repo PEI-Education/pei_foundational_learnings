@@ -21,7 +21,7 @@
   ~[wc:title_student_begin_css]Foundational Learnings~[wc:title_student_end_css]
   <form action="/~[self.page]?frn=~(studentfrn)&changesSaved=true" method="POST">
     <!-- start of content area -->
-    <ul class="tabs">
+    <ul class="tabs shown_tabs">
       <li><a href="fl0.html?frn=~(studentfrn)">K</a></li>
       <li><a href="fl1.html?frn=~(studentfrn)">1</a></li>
       <li><a href="fl2.html?frn=~(studentfrn)">2</a></li>
@@ -34,8 +34,8 @@
       <li><a href="fl9.html?frn=~(studentfrn)">9</a></li>
     </ul>
     ~[if.gpv.changesSaved=true]<div class="feedback-confirm">~[text:psx.common.changes_recorded]</div>[/if]
-    <h2>Mathematics</h2>
-    <div>
+    <div class="box-round">
+      <h2>Mathematics</h2>
       <table class="linkDescList">
         <colgroup>
           <col style="width:20%">
@@ -121,7 +121,6 @@
             <select name="[Students.U_PEI_FL]Math_3_SS5_FE5" id="selectMath_3_SS5_FE5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_3_SS5_FE5)]</select>
           </td>
         </tr>
-        ~[if#chkGrade.~([Students]grade_level)=3]
         <tr>
           <td class="fl-label">Gr 3 Comment:</td>
           <td>
@@ -148,8 +147,52 @@
         </tr>
       </table>
     </div>
-    <h2>English Language Arts</h2>
-    <div>
+    <div class="box-round">
+        <h3>Grade 3 Mathematics School-based Assessment</h3>
+        <table class="linkDescList">
+            <colgroup>
+                <col style="width:20%;">
+                <col>
+            </colgroup>
+            ~[if#chkGrade.~([Students]grade_level)=3]
+            <tr>
+                <td class="fl-label">Assessment Date</td>
+                <td><input type="text" class="psDateWidget" data-maxDate="today" value="~[date]" name="[Students.U_PEI_ASSESS]GR3_MAT_DATE" id="dateGR3_MAT_DATE" /></td>
+            </tr>
+            <tr>
+                <td class="fl-label">Number</td>
+                <td><select name="[Students.U_PEI_ASSESS]GR3_MAT_NUMBER" id="selectGR3_MAT_NUMBER">~[x:codesetoptions;codetype=SchBasedAssessment;includeblank;value=~([Students.U_PEI_ASSESS]GR3_MAT_NUMBER)]</select></td>
+            </tr>
+            <tr>
+                <td class="fl-label">Shape & Space</td>
+                <td><select name="[Students.U_PEI_ASSESS]GR3_MAT_SHAPESPACE" id="selectGR3_MAT_SHAPESPACE">~[x:codesetoptions;codetype=SchBasedAssessment;includeblank;value=~([Students.U_PEI_ASSESS]GR3_MAT_SHAPESPACE)]</select></td>
+            </tr>
+            <tr>
+                <td class="fl-label">Overall</td>
+                <td><select name="[Students.U_PEI_ASSESS]GR3_MAT_OVERALL" id="selectGR3_MAT_OVERALL">~[x:codesetoptions;codetype=SchBasedAssessment;includeblank;value=~([Students.U_PEI_ASSESS]GR3_MAT_OVERALL)]</select></td>
+            </tr>
+            [else#chkGrade]
+            <tr>
+                <td class="fl-label">Assessment Date</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_DATE)</td>
+            </tr>
+            <tr>
+                <td class="fl-label">Number</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_NUMBER)</td>
+            </tr>
+            <tr>
+                <td class="fl-label">Shape & Space</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_SHAPESPACE)</td>
+            </tr>
+            <tr>
+                <td class="fl-label">Overall</td>
+                <td>~([Students.U_PEI_ASSESS]GR3_MAT_OVERALL)</td>
+            </tr>
+            [/if#chkGrade]
+        </table>
+    </div>
+    <div class="box-round">
+      <h2>English Language Arts</h2>
       <table class="linkDescList">
         <colgroup>
           <col style="width:20%">
@@ -255,8 +298,8 @@
         </tr>
       </table>
     </div>
-    <h2>French Language Arts</h2>
-    <div>
+    <div class="box-round">
+      <h2>French Language Arts</h2>
       <table class="linkDescList">
         <colgroup>
           <col style="width:20%">

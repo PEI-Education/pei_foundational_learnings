@@ -291,6 +291,7 @@
       <field name="MATH_9_PR3_RR3" type="String" length="5" comment="Foundational Learning Math-9-PR3-RR3"/>
       <field name="MATH_9_PR6_RR6" type="String" length="5" comment="Foundational Learning Math-9-PR6-RR6"/>
       <field name="MATH_9_PR7_RR7" type="String" length="5" comment="Foundational Learning Math-9-PR7-RR7"/>
+      <field name="MATH_9_PR9_RR9" type="String" length="5" comment="Foundational Learning Math-9-PR9-RR9"/>      
       <field name="MATH_9_SCHOOL" type="String" length="100" comment="School for 9 Math"/>
       <field name="MATH_9_TEACHER" type="String" length="100" comment="Teacher for 9 Math"/>
       <field name="MATH_9_YEAR" type="String" length="100" comment="Year for 9 Math"/>
