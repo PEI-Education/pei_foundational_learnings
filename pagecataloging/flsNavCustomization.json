@@ -5,8 +5,8 @@
       "title": "psx.htmlc.admin_nav.students.fls",
       "parentHTMLID": "navStudentAcademicPerformanceSection",
       "sortOrder": 250,
-      "pageURL": "/admin/students/fls.html?frn=(~studentfrn)",
-      "version": "2024.4.0.0",
+      "pageURL": "/admin/students/fls.html?frn=~(studentfrn)",
+      "version": "2024.4.0.2",
       "contextType": "student"
     }
   ]

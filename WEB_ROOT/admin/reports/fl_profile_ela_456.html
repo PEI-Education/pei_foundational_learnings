@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foundational Learnings - ELA Profile</title>
+<!-- required scripts -->
+    ~[wc:commonscripts] 
+<!-- Required style sheets: screen.css, and print.css --> 
+    <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+    <link href="/images/css/print.css" rel="stylesheet" media="print">
+    <style>
+        @media print {
+            .no-print{
+            display : none !important;
+            }
+        }
+        
+        @media screen {
+/* Cause the header row of the class profile table to stick to the top of the page when scrolling through a long list */
+            .sticky {
+                position: relative;
+
+            }
+            
+            .sticky th {
+                position: sticky;
+                top: 0;
+            }
+        }
+        
+/* used to highlight cells containing Ns */
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+/* function adds no-print to every element on the page except those we want to print, and then calls the print function  */
+    function printReport(printDiv)
+    {
+        $j("*").addClass("no-print");
+        $j(printDiv + " *").removeClass("no-print");
+        $j(printDiv).removeClass("no-print");
+        
+        parent =  $j(printDiv).parent();
+            while($j(parent).length)
+            {
+            $j(parent).removeClass("no-print");
+            parent =  $j(parent).parent();
+        }
+        window.print();
+    }
+    </script>
+</head> 
+<body> 
+    ~[wc:admin_header_css] 
+    <!-- breadcrumb start --><a href="/admin/home.html" target="_top">~[text:psx.html.admin_students.previousgrades.start_page]</a> &gt; <a href="home.html?selectstudent=nosearch" target="_top">~[text:psx.html.admin_students.previousgrades.student_selection]</a> &gt; FL ELA Profile<!-- breadcrumb end --> 
+<!-- start of main menu and content --> 
+    ~[wc:admin_navigation_css] 
+<!-- Start of Page --> 
+    <h1>Foundational Learnings - English Language Arts Profile</h1> 
+<!-- start of content area --> 
+<ul class="tabs shown_tabs">
+  <li><a href="fl_profile_ela.html">K to 3</a></li>
+  <li class="selected"><a href="fl_profile_ela_456.html">4 to 6</a></li>
+  <li><a href="fl_profile_ela_789.html">7 to 9</a></li>
+</ul>
+
+    <div id="tab46" class="box-round">
+        <h3>English Language Arts Grades 4-6 Profile<a href="#" onclick="printReport('#tab46')" class="button" style="float:right;">Print Report</a></h3>
+        
+        <table class="grid sticky">    
+        <thead>
+            <tr>
+                <th colspan="2">Student</th>
+                <th colspan="7">Grade 4</th> 
+                <th colspan="6">Grade 5</th>
+                <th colspan="6">Grade 6</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>SL21</th> 
+                <th>RS2</th> 
+                <th>LC2</th>
+                <th>II3</th>
+                <th>WTO4</th>
+                <th>WTS2</th>
+                <th>WTC4</th>
+                <th>SL11</th>
+                <th>RS5</th>
+                <th>RS6</th>
+                <th>PCE2</th>
+                <th>WTI1</th>
+                <th>WTI2</th>
+                <th>SL13</th>
+                <th>SL24</th>
+                <th>II2</th>
+                <th>PCE3</th>
+                <th>WTI3</th>
+                <th>WTW1</th>
+            </tr>
+        </thead> 
+        <tbody> 
+            ~[tlist_sql;
+                select
+                    s.dcid,
+                    s.lastfirst,
+                    s.student_number,
+                    fl.ELA_4_SL21,
+                    fl.ELA_4_RS2,
+                    fl.ELA_4_LC2,
+                    fl.ELA_4_II3,
+                    fl.ELA_4_WTO4,
+                    fl.ELA_4_WTS2,
+                    fl.ELA_4_WTC4,
+                    fl.ELA_5_SL11,
+                    fl.ELA_5_RS5,
+                    fl.ELA_5_RS6,
+                    fl.ELA_5_PCE2,
+                    fl.ELA_5_WTI1,
+                    fl.ELA_5_WTI2,
+                    fl.ELA_6_SL13,
+                    fl.ELA_6_SL24,
+                    fl.ELA_6_II2,
+                    fl.ELA_6_PCE3,
+                    fl.ELA_6_WTI3,
+                    fl.ELA_6_WTW1
+                    from students s
+                    left join U_PEI_FL fl
+                        on fl.studentsdcid=s.dcid
+                    where
+                        s.dcid in (select dcid from ~[temp.table.current.selection:students])
+                        ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+                    order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+            <tr>
+                <td><a href="/admin/students/fl4.html?frn=001~(dcid)">~(lfname)</a></td>
+                <td>~(studentnum)</td>
+                <td>~(4_SL21)</td>
+                <td>~(4_RS2)</td>
+                <td>~(4_LC2)</td>
+                <td>~(4_II3)</td>
+                <td>~(4_WTO4)</td>
+                <td>~(4_WTS2)</td>
+                <td>~(4_WTC4)</td>
+                <td>~(5_SL11)</td>
+                <td>~(5_RS5)</td>
+                <td>~(5_RS6)</td>
+                <td>~(5_PCE2)</td>
+                <td>~(5_WTI1)</td>
+                <td>~(5_WTI2)</td>
+                <td>~(6_SL13)</td>
+                <td>~(6_SL24)</td>
+                <td>~(6_II2)</td>
+                <td>~(6_PCE3)</td>
+                <td>~(6_WTI3)</td>
+                <td>~(6_WTW1)</td>
+            </tr>
+            [/tlist_sql]
+            </tbody>
+        </table>
+    </div>
+    
+<!-- end of content area -->
+~[wc:admin_footer_css] 
+
+    <script>
+/* script to colour N's in red and make them bold */
+        let cells = document.getElementsByTagName("td");
+        for (let i = 0; i < cells.length; i++) {
+            if (cells[i].innerHTML == "N") {
+                cells[i].classList.add("red");
+            }
+        }
+    </script>
+</body>
+</html>

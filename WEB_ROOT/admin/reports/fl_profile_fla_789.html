@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foundational Learnings - FLA Profile</title>
+<!-- required scripts -->
+	~[wc:commonscripts] 
+<!-- Required style sheets: screen.css, and print.css -->
+	<link href="/images/css/screen.css" rel="stylesheet" media="screen">
+	<link href="/images/css/print.css" rel="stylesheet" media="print">
+	<style>
+    	@media print {
+            .no-print{
+               display : none !important;
+            }
+        }
+        
+        @media screen {
+/* Cause the header row of the class profile table to stick to the top of the page when scrolling through a long list */
+            .sticky {
+                position: relative;
+            }
+            
+            .sticky th {
+                position: sticky;
+                top: 0;
+            }
+        }
+        
+/* used to highlight cells containing Ns */
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+	</style>
+    <script>
+/* function adds no-print to every element on the page except those we want to print, and then calls the print function  */
+    function printReport(printDiv)
+    {
+         $j("*").addClass("no-print");
+         $j(printDiv + " *").removeClass("no-print");
+         $j(printDiv).removeClass("no-print");
+        
+         parent =  $j(printDiv).parent();
+             while($j(parent).length)
+             {
+             $j(parent).removeClass("no-print");
+             parent =  $j(parent).parent();
+         }
+         window.print();
+    }
+    </script>
+</head>
+<body>
+    ~[wc:admin_header_css] 
+    <!-- breadcrumb start --><a href="/admin/home.html" target="_top">~[text:psx.html.admin_students.previousgrades.start_page]</a> &gt; <a href="home.html?selectstudent=nosearch" target="_top">~[text:psx.html.admin_students.previousgrades.student_selection]</a> &gt; FL ELA Profile<!-- breadcrumb end --> 
+<!-- start of main menu and content --> 
+    ~[wc:admin_navigation_css] 
+<!-- Start of Page --> 
+ <h1>Foundational Learnings - French Language Arts Profile</h1>
+<!-- start of content area --> 
+  <ul class="tabs shown_tabs">
+    <li><a href="fl_profile_fla.html">K to 3</a></li>
+    <li><a href="fl_profile_fla_456.html">4 to 6</a></li>
+    <li class="selected"><a href="fl_profile_fla_789.html">7 to 9</a></li>
+  </ul>
+    <div id="tab79" class="box-round">
+	    <h3>French Language Arts Grades 7-9 Profile<a href="#" onclick="printReport('#tab79')" class="button" style="float:right;">Print Report</a></h3>
+	    
+	    <table class="grid sticky">    
+	       <thead>
+            <tr>
+              <th colspan="2">Student</th>
+              <th colspan="5">Grade 7</th> 
+              <th colspan="5">Grade 8</th>
+              <th colspan="5">Grade 9</th>
+          </tr>
+          <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+          </tr>
+	       </thead>
+           <tbody> 
+            ~[tlist_sql;
+                select
+                    s.dcid,
+                    s.lastfirst,
+                    s.student_number,
+                    fl.FLA_7_1,
+                    fl.FLA_7_2,
+                    fl.FLA_7_3,
+                    fl.FLA_7_4,
+                    fl.FLA_7_5,
+                    fl.FLA_8_1,
+                    fl.FLA_8_2,
+                    fl.FLA_8_3,
+                    fl.FLA_8_4,
+                    fl.FLA_8_5,
+                    fl.FLA_9_1,
+                    fl.FLA_9_2,
+                    fl.FLA_9_3,
+                    fl.FLA_9_4,
+                    fl.FLA_9_5
+                from students s
+                left join U_PEI_FL fl
+                    on fl.studentsdcid=s.dcid
+                where
+                    s.dcid in (select dcid from ~[temp.table.current.selection:students])
+                    ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+                order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+            <tr>
+              <td><a href="/admin/students/fl7.html?frn=001~(dcid)">~(lfname)</a></td>
+              <td>~(studentnum)</td>
+              <td>~(7_1)</td>
+              <td>~(7_2)</td>
+              <td>~(7_3)</td>
+              <td>~(7_4)</td>
+              <td>~(7_5)</td>
+              <td>~(8_1)</td>
+              <td>~(8_2)</td>
+              <td>~(8_3)</td>
+              <td>~(8_4)</td>
+              <td>~(8_5)</td>
+              <td>~(9_1)</td>
+              <td>~(9_2)</td>
+              <td>~(9_3)</td>
+              <td>~(9_4)</td>
+              <td>~(9_5)</td>
+            </tr>
+            [/tlist_sql]
+            </tbody>
+	    </table>
+    </div>
+	 
+<!-- end of content area -->
+~[wc:admin_footer_css] 
+
+<script>
+/* script to colour N's in red and make them bold */
+    let cells = document.getElementsByTagName("td");
+    for (let i = 0; i < cells.length; i++) {
+        if (cells[i].innerHTML == "N") {
+            cells[i].classList.add("red");
+        }
+    }
+</script>
+</body>
+</html>

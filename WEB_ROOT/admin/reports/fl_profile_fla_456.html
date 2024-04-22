@@ -59,32 +59,25 @@
  <h1>Foundational Learnings - French Language Arts Profile</h1>
 <!-- start of content area --> 
   <ul class="tabs shown_tabs">
-    <li class="selected"><a href="fl_profile_fla.html">K to 3</a></li>
-    <li><a href="fl_profile_fla_456.html">4 to 6</a></li>
+    <li><a href="fl_profile_fla.html">K to 3</a></li>
+    <li class="selected"><a href="fl_profile_fla_456.html">4 to 6</a></li>
     <li><a href="fl_profile_fla_789.html">7 to 9</a></li>
   </ul>
-	<div class="box-round"  id="tabk3">
-        <h3>French Language Arts Grades K-3 Profile<a href="#" onclick="printReport('#tabk3')" class="button" style="float:right;">Print Report</a></h3>
+
+    <div id="tab46" class="box-round">
+        <h3>French Language Arts Grades 4-6 Profile<a href="#" onclick="printReport('#tab46')" class="button" style="float:right;">Print Report</a></h3>
+	    
 	    <table class="grid sticky">    
 	       <thead>
           <tr>
             <th colspan="2">Student</th>
-            <th colspan="7">Kindergarten</th>
-            <th colspan="7">Grade 1</th> 
-            <th colspan="6">Grade 2</th>
-            <th colspan="6">Grade 3</th>
+            <th colspan="6">Grade 4</th>
+            <th colspan="6">Grade 5</th>
+            <th colspan="6">Grade 6</th>
         </tr>
         <tr>
             <th>Name</th>
             <th>ID</th>
-            <th>21</th>
-            <th>31</th> 
-            <th>41</th>
-            <th>51</th>
-            <th>62</th>
-            <th>71</th>
-            <th>91</th>
-            <th>CO0</th>
             <th>CO2</th>
             <th>CO5</th>
             <th>L2</th>
@@ -104,78 +97,62 @@
             <th>L4</th>
             <th>E2</th>
         </tr>
-	        </thead> 
-          <tbody>
-          ~[tlist_sql;
-            select
-              s.dcid,
-              s.lastfirst,
-              s.student_number,
-              fl.FLA_K_21,
-              fl.FLA_K_31,
-              fl.FLA_K_41,
-              fl.FLA_K_51,
-              fl.FLA_K_62,
-              fl.FLA_K_71,
-              fl.FLA_K_91,
-              fl.FLA_1_CO0,
-              fl.FLA_1_CO2,
-              fl.FLA_1_CO5,
-              fl.FLA_1_L2,
-              fl.FLA_1_L3,
-              fl.FLA_1_L4,
-              fl.FLA_1_E2,
-              fl.FLA_2_CO2,
-              fl.FLA_2_CO5,
-              fl.FLA_2_L2,
-              fl.FLA_2_L3,
-              fl.FLA_2_L4,
-              fl.FLA_2_E2,
-              fl.FLA_3_CO2,
-              fl.FLA_3_CO5,
-              fl.FLA_3_L2,
-              fl.FLA_3_L3,
-              fl.FLA_3_L4,
-              fl.FLA_3_E2
-        from students s
-        left join U_PEI_FL fl
-            on fl.studentsdcid=s.dcid
-        where
-            s.dcid in (select dcid from ~[temp.table.current.selection:students])
-            ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
-        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
-        <tr>
-            <td><a href="/admin/students/fl0.html?frn=001~(dcid)">~(lfname)</a></td>
-            <td>~(studentnum)</td>
-            <td>~(K_21)</td>
-            <td>~(K_31)</td>
-            <td>~(K_41)</td>
-            <td>~(K_51)</td>
-            <td>~(K_62)</td>
-            <td>~(K_71)</td>
-            <td>~(K_91)</td>
-            <td>~(1_CO0)</td>
-            <td>~(1_CO2)</td>
-            <td>~(1_CO5)</td>
-            <td>~(1_L2)</td>
-            <td>~(1_L3)</td>
-            <td>~(1_L4)</td>
-            <td>~(1_E2)</td>
-            <td>~(2_CO2)</td>
-            <td>~(2_CO5)</td>
-            <td>~(2_L2)</td>
-            <td>~(2_L3)</td>
-            <td>~(2_L4)</td>
-            <td>~(2_E2)</td>
-            <td>~(3_CO2)</td>
-            <td>~(3_CO5)</td>
-            <td>~(3_L2)</td>
-            <td>~(3_L3)</td>
-            <td>~(3_L4)</td>
-            <td>~(3_E2)</td>
-          </tr>
-          [/tlist_sql]
-        </tbody>
+	       </thead> 
+           <tbody> 
+            ~[tlist_sql;
+                select
+                    s.dcid,
+                    s.lastfirst,
+                    s.student_number,
+                    fl.FLA_4_CO2,
+                    fl.FLA_4_CO5,
+                    fl.FLA_4_L2,
+                    fl.FLA_4_L3,
+                    fl.FLA_4_L4,
+                    fl.FLA_4_E2,
+                    fl.FLA_5_CO2,
+                    fl.FLA_5_CO5,
+                    fl.FLA_5_L2,
+                    fl.FLA_5_L3,
+                    fl.FLA_5_L4,
+                    fl.FLA_5_E2,
+                    fl.FLA_6_CO2,
+                    fl.FLA_6_CO5,
+                    fl.FLA_6_L2,
+                    fl.FLA_6_L3,
+                    fl.FLA_6_L4,
+                    fl.FLA_6_E2
+                    from students s
+                    left join U_PEI_FL fl
+                        on fl.studentsdcid=s.dcid
+                    where
+                        s.dcid in (select dcid from ~[temp.table.current.selection:students])
+                        ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
+                    order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
+               <tr>
+                <td><a href="/admin/students/fl4.html?frn=001~(dcid)">~(lfname)</a></td>
+                <td>~(studentnum)</td>
+                <td>~(4_CO2)</td>
+                <td>~(4_CO5)</td>
+                <td>~(4_L2)</td>
+                <td>~(4_L3)</td>
+                <td>~(4_L4)</td>
+                <td>~(4_E2)</td>
+                <td>~(5_CO2)</td>
+                <td>~(5_CO5)</td>
+                <td>~(5_L2)</td>
+                <td>~(5_L3)</td>
+                <td>~(5_L4)</td>
+                <td>~(5_E2)</td>
+                <td>~(6_CO2)</td>
+                <td>~(6_CO5)</td>
+                <td>~(6_L2)</td>
+                <td>~(6_L3)</td>
+                <td>~(6_L4)</td>
+                <td>~(6_E2)</td>             
+            </tr>
+            [/tlist_sql]
+            </tbody>
 	    </table>
     </div>
 	 

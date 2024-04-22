@@ -8,46 +8,45 @@
 	<link href="/images/css/screen.css" rel="stylesheet" media="screen">
 	<link href="/images/css/print.css" rel="stylesheet" media="print">
 	<style>
-    	@media print {
-            .no-print{
-               display : none !important;
-            }
+    @media print {
+        .no-print{
+          display : none !important;
+        }
+      }
+      
+      @media screen {
+  /* Cause the hreader row of the class profile table to stick to the top of the page when scrolling through a long list */
+        .sticky {
+          position: relative;
         }
         
-        @media screen {
-/* Cause the hreader row of the class profile table to stick to the top of the page when scrolling through a long list */
-            .sticky {
-                position: relative;
-
-            }
-            
-            .sticky th {
-                position: sticky;
-                top: 0;
-            }
+        .sticky th {
+          position: sticky;
+          top: 0;
         }
-        
-/* used to highlight cells containing Ns */
-        .red {
-            color: red;
-            font-weight: bold;
-        }
+      }
+      
+  /* used to highlight cells containing Ns */
+      .red {
+        color: red;
+        font-weight: bold;
+      }
 	</style>
     <script>
 /* function adds no-print to everyelement on the page except those we want to print, and then calls the print function  */
     function printReport(printDiv)
     {
-         $j("*").addClass("no-print");
-         $j(printDiv + " *").removeClass("no-print");
-         $j(printDiv).removeClass("no-print");
-        
-         parent =  $j(printDiv).parent();
-             while($j(parent).length)
-             {
-             $j(parent).removeClass("no-print");
-             parent =  $j(parent).parent();
-         }
-         window.print();
+      $j("*").addClass("no-print");
+      $j(printDiv + " *").removeClass("no-print");
+      $j(printDiv).removeClass("no-print");
+    
+      parent =  $j(printDiv).parent();
+      while($j(parent).length)
+      {
+          $j(parent).removeClass("no-print");
+          parent =  $j(parent).parent();
+      }
+      window.print();
     }
     </script>
 </head>
@@ -59,11 +58,10 @@
 <!-- Start of Page --> 
  <h1>Foundational Learnings - Mathematics Profile</h1>
 
-<div class="tabs">
-    <ul>
-      <li><a href="#tabk3">K to 3</a></li>
-      <li><a href="#tab46">4 to 6</a></li>
-      <li><a href="#tab79">7 to 9</a></li>
+    <ul class="tabs shown_tabs">
+      <li class="selected"><a href="fl_profile_ma.html">K to 3</a></li>
+      <li><a href="fl_profile_ma_456.html">4 to 6</a></li>
+      <li><a href="fl_profile_ma_789.html">7 to 9</a></li>
     </ul>
 	<div class="box-round"  id="tabk3">
         <h3>Mathematics Grades K-3 Profile<a href="#" onclick="printReport('#tabk3')" class="button" style="float:right;">Print Report</a></h3>
@@ -116,7 +114,7 @@
            <tbody>
         ~[tlist_sql;
             select
-                s.id,
+                s.dcid,
                 s.lastfirst,
                 s.student_number,
                 fl.math_k_11,
@@ -159,7 +157,7 @@
             ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
         order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
         <tr>
-            <td><a href="/admin/students/fl0.html?frn=001~(id)">~(lfname)</a></td>
+            <td><a href="/admin/students/fl0.html?frn=001~(dcid)">~(lfname)</a></td>
             <td>~(studentnum)</td>
             <td>~(k_11)</td>
             <td>~(k_12)</td>
@@ -197,215 +195,7 @@
         [/tlist_sql]
             </tbody>
 	    </table>
-	</div>
-    <div id="tab46">
-        <h3>Mathematics Grades 4-6 Profile<a href="#" onclick="printReport('#tab46')" class="button" style="float:right;">Print Report</a></h3>
-	    
-	    <table class="grid sticky">    
-	       <thead>
-	           <tr>
-	               <th colspan="2">Student</th>
-	               <th colspan="8">Grade 4</th>
-	               <th colspan="7">Grade 5</th>
-	               <th colspan="8">Grade 6</th>
-	           </tr>
-	           <tr>
-	               <th>Name</th>
-	               <th>ID</th>
-	               <th>N1</th> 
-	               <th>N3</th>
-	               <th>N5</th>
-	               <th>N6</th>
-	               <th>N7</th>
-	               <th>N8</th>
-	               <th>N9</th>
-	               <th>SS3-FE3</th>
-	               <th>N2</th>
-	               <th>N5</th>
-	               <th>N6</th>
-	               <th>N7</th>
-	               <th>N9</th>
-	               <th>PR2-RR2</th>
-	               <th>SS1-FE1</th>
-	               <th>N3</th>
-	               <th>N4</th>
-	               <th>N7</th>
-	               <th>N8</th>
-	               <th>PR2-RR2</th>
-	               <th>SS1-FE1</th>
-	               <th>SS3-FE3</th>
-	               <th>SP1</th>
-	           </tr>
-	       </thead> 
-           <tbody> 
-            ~[tlist_sql;
-                select
-                    s.id,
-                    s.lastfirst,
-                    s.student_number,
-                    fl.math_4_N1,
-                    fl.math_4_N3,
-                    fl.math_4_N5,
-                    fl.math_4_N6,
-                    fl.math_4_N7,
-                    fl.math_4_N8,
-                    fl.math_4_N9,
-                    fl.math_4_SS3_FE3,
-                    fl.math_5_N2,
-                    fl.math_5_N5,
-                    fl.math_5_N6,
-                    fl.math_5_n7,
-                    fl.math_5_n9,
-                    fl.math_5_PR2_RR2,
-                    fl.math_5_SS1_FE1,
-                    fl.math_6_n3,
-                    fl.math_6_n4,
-                    fl.math_6_n7,
-                    fl.math_6_n8,
-                    fl.math_6_pr2_rr2,
-                    fl.math_6_SS1_FE1,
-                    fl.math_6_SS3_FE3,
-                    fl.math_6_sp1
-            from students s
-            left join U_PEI_FL fl
-                on fl.studentsdcid=s.dcid
-            where
-                s.dcid in (select dcid from ~[temp.table.current.selection:students])
-                ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
-            order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
-            <tr>
-                <td><a href="/admin/students/fl0.html?frn=001~(id)">~(lfname)</a></td>
-                <td>~(studentnum)</td>
-                <td>~(4_n1)</td>
-                <td>~(4_n3)</td>
-                <td>~(4_n5)</td>
-                <td>~(4_n6)</td>
-                <td>~(4_n7)</td>
-                <td>~(4_n8)</td>
-                <td>~(4_n9)</td>
-                <td>~(4_ss3_fe3)</td>
-                <td>~(5_N2)</td>
-                <td>~(5_N5)</td>
-                <td>~(5_N6)</td>
-                <td>~(5_n7)</td>
-                <td>~(5_n9)</td>
-                <td>~(5_PR2_RR2)</td>
-                <td>~(5_SS1_FE1)</td>
-                <td>~(6_n3)</td>
-                <td>~(6_n4)</td>
-                <td>~(6_n7)</td>
-                <td>~(6_n8)</td>
-                <td>~(6_pr2_rr2)</td>
-                <td>~(6_SS1_FE1)</td>
-                <td>~(6_SS3_FE3)</td>
-                <td>~(6_SP1)</td>
-            </tr>
-            [/tlist_sql]
-            </tbody>
-	    </table>
-    </div>
-    <div id="tab79">
-	    <h3>Mathematics Grades 7-9 Profile<a href="#" onclick="printReport('#tab79')" class="button" style="float:right;">Print Report</a></h3>
-	    
-	    <table class="grid sticky">    
-	       <thead>
-	           <tr>
-	               <th colspan="2">Student</th>
-	               <th colspan="8">Grade 7</th> 
-	               <th colspan="6">Grade 8</th>
-	               <th colspan="7">Grade 9</th>
-	           </tr>
-	           <tr>
-	               <th>Name</th>
-	               <th>ID</th>
-	               <th>N5</th> 
-	               <th>N6</th> 
-	               <th>N7</th>
-	               <th>PR7-RR7</th>
-	               <th>SS1-FE1</th>
-	               <th>SS2-FE2</th>
-	               <th>SS4-FE4</th>
-	               <th>SP4</th>
-	               <th>N5</th>
-	               <th>N6</th>
-	               <th>N7</th>
-	               <th>PR1-RR1</th>
-	               <th>PR2-RR2</th>
-	               <th>SS1-FE1</th>
-	               <th>N1</th>
-	               <th>N2</th>
-	               <th>N3</th>
-	               <th>N4</th>
-	               <th>PR3-RR3</th>
-	               <th>PR6-RR6</th>
-	               <th>PR9-RR7</th>
-	           </tr>
-	       </thead>
-           <tbody> 
-            ~[tlist_sql;
-                select
-                    s.id,
-                    s.lastfirst,
-                    s.student_number,
-                    fl.math_7_N5,
-                    fl.math_7_N6,
-                    fl.math_7_N7,
-                    fl.math_7_PR7_RR7,
-                    fl.math_7_SS1_FE1,
-                    fl.math_7_SS2_FE2,
-                    fl.math_7_SS4_FE4,
-                    fl.math_7_SP4,
-                    fl.math_8_N5,
-                    fl.math_8_N6,
-                    fl.math_8_N7,
-                    fl.math_8_PR1_RR1,
-                    fl.math_8_PR2_RR2,
-                    fl.math_8_SS1_FE1,
-                    fl.math_9_N1,
-                    fl.math_9_N2,
-                    fl.math_9_N3,
-                    fl.math_9_N4,
-                    fl.math_9_PR3_RR3,
-                    fl.math_9_PR6_RR6,
-                    fl.math_9_PR7_RR7
-            from students s
-            left join U_PEI_FL fl
-                on fl.studentsdcid=s.dcid
-            where
-                s.dcid in (select dcid from ~[temp.table.current.selection:students])
-                ~[if.is.a.school] and s.schoolid = ~(curschoolid) [/if.is.a.school]
-            order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
-            <tr>
-                <td><a href="/admin/students/fl0.html?frn=001~(id)">~(lfname)</a></td>
-                <td>~(studentnum)</td>
-                <td>~(7_n5)</td>
-                <td>~(7_n6)</td>
-                <td>~(7_n7)</td>
-                <td>~(7_PR7_RR7)</td>
-                <td>~(7_SS1_FE1)</td>
-                <td>~(7_SS2_FE2)</td>
-                <td>~(7_SS4_FE4)</td>
-                <td>~(7_SP4)</td>
-                <td>~(8_N5)</td>
-                <td>~(8_N6)</td>
-                <td>~(8_N7)</td>
-                <td>~(8_PR1_RR1)</td>
-                <td>~(8_PR2_RR2)</td>
-                <td>~(8_SS1_FE1)</td>
-                <td>~(9_N1)</td>
-                <td>~(9_N2)</td>
-                <td>~(9_n3)</td>
-                <td>~(9_n4)</td>
-                <td>~(9_PR3_RR3)</td>
-                <td>~(9_PR6-RR6)</td>
-                <td>~(9_PR7-RR7)</td>
-            </tr>
-            [/tlist_sql]
-            </tbody>
-	    </table>
-    </div>
-</div>
-	 
+	</div>	 
 <!-- end of content area -->
 ~[wc:admin_footer_css] 
 
