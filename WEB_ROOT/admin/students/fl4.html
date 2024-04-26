@@ -257,6 +257,50 @@
         </tr>
       </table>
     </div>
+    <div class="box-round">
+      <h3>Grade 4 Writing School-Based Assessment</h3>
+      <table class="linkDescList">
+          <colgroup>
+              <col style="width:20%;">
+              <col>
+          </colgroup>
+          ~[if#chkGrade.~([Students]grade_level)=4]
+          <tr>
+              <td class="fl-label">Assessment Date</td>
+              <td><input type="text" class="psDateWidget" data-maxDate="today" value="~[date]" name="[Students.U_PEI_ASSESS]GR4_WRT_DATE" id="dateGR4_WRT_DATE" /></td>
+          </tr>
+          <tr>
+              <td class="fl-label">Ideas</td>
+              <td><select name="[Students.U_PEI_ASSESS]GR4_WRT_IDE" id="selectGR4_WRT_IDE">~[x:codesetoptions;codetype=SchBasedAssessStrong;includeblank;value=~([Students.U_PEI_ASSESS]GR4_WRT_IDE]</select></td>
+          </tr>
+          <tr>
+              <td class="fl-label">Organization</td>
+              <td><select name="[Students.U_PEI_ASSESS]GR4_WRT_ORG" id="selectGR4_WRT_ORG">~[x:codesetoptions;codetype=SchBasedAssessStrong;includeblank;value=~([Students.U_PEI_ASSESS]GR4_WRT_ORG)]</select></td>
+          </tr>
+          <tr>
+              <td class="fl-label">Conventions</td>
+              <td><select name="[Students.U_PEI_ASSESS]GR4_WRT_CON" id="selectGR4_WRT_CON">~[x:codesetoptions;codetype=SchBasedAssessStrong;includeblank;value=~([Students.U_PEI_ASSESS]GR4_WRT_CON)]</select></td>
+          </tr>
+          [else#chkGrade]
+          <tr>
+              <td class="fl-label">Assessment Date</td>
+              <td>~([Students.U_PEI_ASSESS]GR4_WRT_DATE)</td>
+          </tr>
+          <tr>
+              <td class="fl-label">Ideas</td>
+              <td>~([Students.U_PEI_ASSESS]GR4_WRT_IDE)</td>
+          </tr>
+          <tr>
+              <td class="fl-label">Organization</td>
+              <td>~([Students.U_PEI_ASSESS]GR4_WRT_ORG)</td>
+          </tr>
+          <tr>
+              <td class="fl-label">Convetions</td>
+              <td>~([Students.U_PEI_ASSESS]GR4_WRT_CON)</td>
+          </tr>
+          [/if#chkGrade]
+      </table>
+  </div>
 <div class="box-round"><h2>French Language Arts</h2>
       <table class="linkDescList">
         <colgroup>
