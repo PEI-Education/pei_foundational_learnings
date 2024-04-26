@@ -4,7 +4,11 @@
     <extendedTable coreTable="Students" dbTableName="U_PEI_ASSESS" comment="">
         <field name="GR3_MAT_DATE" type="Date"/>
         <field name="GR3_MAT_NUMBER" type="String" length="40"/>
+        <field name="GR4_WRT_ORG" type="String" length="40"/>
+        <field name="GR4_WRT_DATE" type="Date"/>
+        <field name="GR4_WRT_IDE" type="String" length="40"/>
         <field name="GR3_MAT_SHAPESPACE" type="String" length="40"/>
         <field name="GR3_MAT_OVERALL" type="String" length="40"/>
+        <field name="GR4_WRT_CON" type="String" length="40"/>
     </extendedTable>
 </psExtension>
