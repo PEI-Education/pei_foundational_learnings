@@ -313,21 +313,21 @@
 	       <thead>
 	           <tr>
 	               <th colspan="2">Student</th>
-	               <th colspan="8">Grade 7</th> 
+	               <th colspan="7">Grade 7</th> 
 	               <th colspan="6">Grade 8</th>
 	               <th colspan="7">Grade 9</th>
 	           </tr>
 	           <tr>
 	               <th>Name</th>
 	               <th>ID</th>
-	               <th>N5</th> 
-	               <th>N6</th> 
-	               <th>N7</th>
-	               <th>PR7-RR7</th>
-	               <th>SS1-FE1</th>
-	               <th>SS2-FE2</th>
-	               <th>SS4-FE4</th>
-	               <th>SP4</th>
+                 <th>N4</th> <!-- 2024/12/20: Formerly N6--> 
+                 <th>N5</th> <!-- 2024/12/20: Formerly 8.N7-->
+	               <th>N6</th> <!-- 2024/12/20: Formerly N6-->
+	               <th>PR6</th> <!-- 2024/12/20: Formerly PR7-->
+	               <th>SS1</th>
+	               <th>SS2</th>
+	               <th>SS3</th> <!-- 2024/12/20: Formerly SS4-->
+	               <!-- <th>SP4</th> 2024/12/20: No longer FL?-->
 	               <th>N5</th>
 	               <th>N6</th>
 	               <th>N7</th>
@@ -349,17 +349,17 @@
                     s.id,
                     s.lastfirst,
                     s.student_number,
-                    fl.math_7_N5,
-                    fl.math_7_N6,
-                    fl.math_7_N7,
+                    fl.math_7_N6, -- Now N4
+                    fl.math_8_N7, -- Now 7.N5
+                    fl.math_7_N7, -- Now N6
                     fl.math_7_PR7_RR7,
                     fl.math_7_SS1_FE1,
                     fl.math_7_SS2_FE2,
                     fl.math_7_SS4_FE4,
-                    fl.math_7_SP4,
+                    --fl.math_7_SP4, No longer on FL list
                     fl.math_8_N5,
-                    fl.math_8_N6,
-                    fl.math_8_N7,
+                    fl.math_8_N6, 
+                    fl.math_7_N5, -- Now 8.N4
                     fl.math_8_PR1_RR1,
                     fl.math_8_PR2_RR2,
                     fl.math_8_SS1_FE1,

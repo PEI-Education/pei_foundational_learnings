@@ -95,6 +95,21 @@
           </td>
         </tr>
         <tr>
+          <td class="fl-label">7 N5
+            <span class="tooltiptext">
+              Demonstrate an understanding of adding and subtracting positive fractions and mixed numbers, with like and unlike denominators, concretely, pictorially and symbolically (limited to positive sums and differences).
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_7_N5)$"Y"]
+            ~([Students.U_PEI_FL]Math_7_N5)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]Math_7_N5" id="selectMath_7_N5">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_7_N5)]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
           <td class="fl-label">8 N6
             <span class="tooltiptext">
               Demonstrate an understanding of multiplying and dividing positive fractions and mixed numbers, concretely, pictorially and symbolically.
@@ -105,21 +120,6 @@
             [else#Y]
 
             <select name="[Students.U_PEI_FL]Math_8_N6" id="selectMath_8_N6">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_N6)]</select>
-
-            [/if#Y]
-          </td>
-        </tr>
-        <tr>
-          <td class="fl-label">8 N7
-            <span class="tooltiptext">
-              Demonstrate an understanding of multiplication and division of integers, concretely, pictorially and symbolically.
-            </span>
-          </td>
-          <td>~[if#Y.~([Students.U_PEI_FL]Math_8_N7)$"Y"]
-            ~([Students.U_PEI_FL]Math_8_N7)
-            [else#Y]
-
-            <select name="[Students.U_PEI_FL]Math_8_N7" id="selectMath_8_N7">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_N7)]</select>
 
             [/if#Y]
           </td>
