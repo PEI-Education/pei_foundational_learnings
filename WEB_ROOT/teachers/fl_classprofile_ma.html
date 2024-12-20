@@ -90,17 +90,17 @@
 	               <th>N3</th>
 	               <th>N4</th>
 	               <th>N5</th>
-	               <th>N9</th>
-	               <th>N10</th>
-	               <th>PR3-RR3</th>
-	               <th>SS1-FE1</th>
+	               <th>N8</th> <!-- 2024/12/20: Formerly N9 -->
+	               <th>N9</th> <!-- 2024/12/20: Formerly N10 -->
+	               <th>PR3</th>
+	               <th>SS1</th>
 	               <th>N1</th>
 	               <th>N4</th>
 	               <th>N6</th>
 	               <th>N9</th>
 	               <th>N10</th>
-	               <th>PR2-RR2</th>
-	               <th>PR4-RR4</th>
+	               <th>PR1</th> <!-- 2024/12/20: Formerly PR2 -->
+	               <th>PR3</th> <!-- 2024/12/20: Formerly PR4 -->
 	               <th>N1</th>
 	               <th>N2</th>
 	               <th>N9</th>
@@ -130,8 +130,8 @@
                 fl.math_1_n3,
                 fl.math_1_n4,
                 fl.math_1_n5,
-                fl.math_1_n9,
-                fl.math_1_n10,
+                fl.math_1_n9, -- Now N8
+                fl.math_1_n10, --Now N9
                 fl.math_1_pr3_rr3,
                 fl.math_1_ss1_fe1,
                 fl.math_2_n1,
@@ -139,15 +139,15 @@
                 fl.math_2_n6,
                 fl.math_2_n9,
                 fl.math_2_n10,
-                fl.math_2_pr2_rr2,
-                fl.math_2_pr4_rr4,
+                fl.math_2_pr2_rr2, -- Now PR1
+                fl.math_2_pr4_rr4, -- Now PR3
                 fl.math_3_n1,
                 fl.math_3_n2,
-                fl.math_3_n9,
-                fl.math_3_n10,
-                fl.math_3_n11,
-                fl.math_3_n12,
-                fl.math_3_pr2_rr2,
+                fl.math_3_n9, -- Now N8
+                fl.math_3_n10, -- Now N9
+                fl.math_3_n11, -- Now N10
+                fl.math_3_n12, -- Now N11
+                fl.math_3_pr2_rr2, -- Now PR1
                 fl.math_3_ss5_fe5
             from cc
             join students s
@@ -219,21 +219,21 @@
 	               <th>N7</th>
 	               <th>N8</th>
 	               <th>N9</th>
-	               <th>SS3-FE3</th>
+	               <th>SS3</th>
 	               <th>N2</th>
 	               <th>N5</th>
 	               <th>N6</th>
 	               <th>N7</th>
 	               <th>N9</th>
-	               <th>PR2-RR2</th>
-	               <th>SS1-FE1</th>
-	               <th>N3</th>
-	               <th>N4</th>
-	               <th>N7</th>
-	               <th>N8</th>
-	               <th>PR2-RR2</th>
-	               <th>SS1-FE1</th>
-	               <th>SS3-FE3</th>
+	               <th>PR2</th>
+	               <th>SS1</th>
+	               <th>N2</th> <!-- 2024/12/20: Formerly N3 -->
+	               <th>N3</th> <!-- 2024/12/20: Formerly N4 -->
+	               <th>N6</th> <!-- 2024/12/20: Formerly N7 -->
+	               <th>N7</th> <!-- 2024/12/20: Formerly N8 -->
+	               <th>PR2</th>
+	               <th>SS1</th>
+	               <th>SS3</th>
 	               <th>SP1</th>
 	           </tr>
 	       </thead> 
@@ -250,7 +250,7 @@
                     fl.math_4_N7,
                     fl.math_4_N8,
                     fl.math_4_N9,
-                    fl.math_4_SS3_FE3,
+                    fl.math_4_SS3,
                     fl.math_5_N2,
                     fl.math_5_N5,
                     fl.math_5_N6,
@@ -258,10 +258,10 @@
                     fl.math_5_n9,
                     fl.math_5_PR2_RR2,
                     fl.math_5_SS1_FE1,
-                    fl.math_6_n3,
-                    fl.math_6_n4,
-                    fl.math_6_n7,
-                    fl.math_6_n8,
+                    fl.math_6_n3, -- Now N2
+                    fl.math_6_n4, -- Now N3
+                    fl.math_6_n7, -- Now N6
+                    fl.math_6_n8, -- Now N7
                     fl.math_6_pr2_rr2,
                     fl.math_6_SS1_FE1,
                     fl.math_6_SS3_FE3,

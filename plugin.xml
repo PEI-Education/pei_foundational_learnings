@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         description="Installs FL pages on SIS and PT. Version 1.1 adds EUI support."
         name="PEI Foundational Learnings"
-        version="2024.4.3"
+        version="2024.12.0"
         xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
 <publisher name="DELL - Luke Walker">
   <contact email="lawalker@gov.pe.ca"/>
