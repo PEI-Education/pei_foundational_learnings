@@ -140,7 +140,7 @@
           </td>
         </tr>
         <tr>
-          <td class="fl-label">9 PR3-RR3
+          <td class="fl-label">9 PR2 <!-- 2024/12/22: Formerly PR3 -->
             <span class="tooltiptext">
               Model and solve problems using linear equations of the form: ax=b; x/a=b,a≠0; ax+b=c; x/a+ b=c,a≠0; ax=b+cx; a(x+b)=c; ax+b=cx+d; a(bx+c)= d(ex+f); a/x=b,x≠0 where a, b, c, d, e and f are rational numbers.
             </span>
@@ -155,7 +155,7 @@
           </td>
         </tr>
         <tr>
-          <td class="fl-label">9 PR6-RR6
+          <td class="fl-label">9 PR5 <!-- 2024/12/22: Formerly PR6 -->
             <span class="tooltiptext">
               Model, record and explain the operations of addition and subtraction of polynomial expressions, concretely, pictorially and symbolically (limited to polynomials of degree less than or equal to 2).
             </span>
@@ -170,7 +170,7 @@
           </td>
         </tr>
         <tr>
-          <td class="fl-label">9 PR7-RR7
+          <td class="fl-label">9 PR6 <!-- 2024/12/22: Formerly PR7 -->
             <span class="tooltiptext">
               Model, record and explain the operations of multiplication and division of polynomial expressions (limited to polynomials of degree less than or equal to 2) by monomials, concretely, pictorially and symbolically.
             </span>
@@ -180,6 +180,22 @@
             [else#Y]
 
             <select name="[Students.U_PEI_FL]MATH_9_PR9_RR9" id="selectMATH_9_PR9_RR9">~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]MATH_9_PR9_RR9)]</select>
+
+            [/if#Y]
+          </td>
+        </tr>
+        <tr>
+          <td class="fl-label">9 SS1 <!-- 2024/12/22: Formerly 8.SS1 -->
+            <span class="tooltiptext">Develop and apply the Pythagorean theorem to solve problems.
+            </span>
+          </td>
+          <td>~[if#Y.~([Students.U_PEI_FL]Math_8_SS1_FE1)$"Y"]
+            ~([Students.U_PEI_FL]Math_8_SS1_FE1)
+            [else#Y]
+
+            <select name="[Students.U_PEI_FL]Math_8_SS1_FE1" id="selectMath_8_SS1_FE1">
+              ~[x:codesetoptions;codetype=FoundationalLearning;includeblank;value=~([Students.U_PEI_FL]Math_8_SS1_FE1)]
+            b</select>
 
             [/if#Y]
           </td>

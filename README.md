@@ -22,6 +22,7 @@ PowerSchool customization for tracking PEI's Foundational Learnings
 In fall 2024, English Programs requested we re-number many of the Foundational Learnings for math. This work was completed in the front end, but the back end was not updated. The field names in the database are still the old numbers, but the labels on the front end are the new numbers. This is not a problem for the user, but it is important to note for anyone writing a query. The file PowerSchool Changes.xlsx in the root of this repository has a list of the old and new numbers for reference.
 
 ## Version/Release Notes
+  - **2024.12.1**: Updated Math FL numbering to match new curriculum guides. See note above on field-name/label alignment.
   - **2024.12.0**: Removed school and year dropdown selectors from printouts of class profile reports for admins.
   - **2024.4.3**: Added Writing School-Based Assessment for Grade 4.
   - **2024.4.2**: Added Class Profiles compatibility with EUI.

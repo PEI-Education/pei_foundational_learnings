@@ -86,19 +86,19 @@
 	               <th>SS2</th>
 	               <th>SS3</th> <!-- 2024/12/20: Formerly SS4-->
 	               <!-- <th>SP4</th> 2024/12/20: No longer FL?-->
-	               <th>N5</th>
-	               <th>N6</th>
-	               <th>N7</th>
-	               <th>PR1-RR1</th>
-	               <th>PR2-RR2</th>
-	               <th>SS1-FE1</th>
+	               <th>N3</th> <!-- 2024/12/22: Formerly N5 -->
+	               <th>N4</th> <!-- 2024/12/22: Formerly 7.N5 -->
+	               <th>N5</th> <!-- 2024/12/22: Formerly N6 -->
+	               <th>PR1</th>
+	               <th>PR2</th>
 	               <th>N1</th>
 	               <th>N2</th>
 	               <th>N3</th>
 	               <th>N4</th>
-	               <th>PR3-RR3</th>
-	               <th>PR6-RR6</th>
-	               <th>PR9-RR7</th>
+	               <th>PR2</th> <!-- 2024/12/22: Formerly PR3 -->
+	               <th>PR5</th> <!-- 2024/12/22: Formerly PR6 -->
+	               <th>PR6</th> <!-- 2024/12/22: Formerly PR7 -->
+                 <th>SS1</th> <!-- 2024/12/22: Formerly 8.SS1 -->
 	           </tr>
 	       </thead>
            <tbody> 
@@ -115,18 +115,19 @@
                     fl.math_7_SS2_FE2,
                     fl.math_7_SS4_FE4,
                     --fl.math_7_SP4, No longer on FL list
-                    fl.math_8_N5,
+                    fl.math_8_N5, -- Now N3
                     fl.math_7_N5, -- Now 8.N4
+                    fl.math_8_N6, -- Now N5
                     fl.math_8_PR1_RR1,
                     fl.math_8_PR2_RR2,
-                    fl.math_8_SS1_FE1,
                     fl.math_9_N1,
                     fl.math_9_N2,
                     fl.math_9_N3,
                     fl.math_9_N4,
-                    fl.math_9_PR3_RR3,
-                    fl.math_9_PR6_RR6,
-                    fl.math_9_PR7_RR7
+                    fl.math_9_PR3_RR3, -- Now PR2
+                    fl.math_9_PR6_RR6, -- Now PR5
+                    fl.math_9_PR7_RR7, -- Now PR6
+                    fl.math_8_SS1_FE1 -- Now 9.SS1
             from students s
             left join U_PEI_FL fl
                 on fl.studentsdcid=s.dcid
