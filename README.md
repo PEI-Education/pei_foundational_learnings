@@ -1,5 +1,5 @@
 # pei_foundational_learnings
-
+  
 PowerSchool customization for tracking PEI's Foundational Learnings
 
 ## Features
@@ -28,6 +28,8 @@ In fall 2024, English Programs requested we re-number many of the Foundational L
 
 ## Version/Release Notes
 
+- **2025.5.3**: Fixed alignment of grade level headers to outcomes in Class Profile reports.
+- **2025.5.2**: Removed Grade 1 ELA RS1, RS2.
 - **2025.5.0**: Added requested edits to Math numbering after testing.
 - **2024.12.1**: Updated Math FL numbering to match new curriculum guides. See note above on field-name/label alignment.
 - **2024.12.0**: Removed school and year dropdown selectors from printouts of class profile reports for admins.
