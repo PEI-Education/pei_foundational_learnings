@@ -334,5 +334,8 @@
       <field name="FLA_9_SCHOOL" type="String" length="100" comment="School for 9 FLA"/>
       <field name="FLA_9_TEACHER" type="String" length="100" comment="Teacher for 9 FLA"/>
       <field name="FLA_9_YEAR" type="String" length="100" comment="Year for 9 FLA"/>
+      <field name="FLA_ME1" type="String" length="5" comment="Foundation Learning FLA-MÉ.1"/>
+      <field name="FLA_ME2" type="String" length="5" comment="Foundation Learning FLA-MÉ.2"/>
+      <field name="FLA_ME3" type="String" length="5" comment="Foundation Learning FLA-MÉ.3"/>
     </extendedTable>
 </psExtension>
