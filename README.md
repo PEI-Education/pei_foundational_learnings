@@ -28,6 +28,7 @@ In fall 2024, English Programs requested we re-number many of the Foundational L
 
 ## Version/Release Notes
 
+- **2026.6.0**: Updated K FLA FLs.
 - **2025.5.3**: Fixed alignment of grade level headers to outcomes in Class Profile reports.
 - **2025.5.2**: Removed Grade 1 ELA RS1, RS2.
 - **2025.5.0**: Added requested edits to Math numbering after testing.
