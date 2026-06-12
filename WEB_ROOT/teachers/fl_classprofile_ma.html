@@ -114,7 +114,7 @@
            <tbody>
         ~[tlist_sql;
             select
-                s.id,
+                s.dcid,
                 s.lastfirst,
                 s.student_number,
                 fl.math_k_11,
@@ -159,7 +159,7 @@
 	            AND cc.sectionid = ~[gpv:sectionid]
 	        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
         <tr>
-            <td><a href="/teachers/studentpages/fl0.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+            <td><a href="/teachers/studentpages/fl0.html?sectionid=~[gpv:sectionid]&frn=001~(dcid)">~(lfname)</a></td>
             <td>~(studentnum)</td>
             <td>~(k_11)</td>
             <td>~(k_12)</td>
@@ -240,7 +240,7 @@
            <tbody> 
             ~[tlist_sql;
                 select
-                    s.id,
+                    s.dcid,
                     s.lastfirst,
                     s.student_number,
                     fl.math_4_N1,

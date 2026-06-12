@@ -107,7 +107,7 @@
           <tbody>
           ~[tlist_sql;
             select
-              s.id,
+              s.dcid,
               s.lastfirst,
               s.student_number,
               fl.FLA_K_21,
@@ -146,7 +146,7 @@
 	            AND cc.sectionid = ~[gpv:sectionid]
 	        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
         <tr>
-            <td><a href="/teachers/studentpages/fl0.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+            <td><a href="/teachers/studentpages/fl0.html?sectionid=~[gpv:sectionid]&frn=001~(dcid)">~(lfname)</a></td>
             <td>~(studentnum)</td>
             <td>~(K_21)</td>
             <td>~(K_31)</td>
@@ -216,7 +216,7 @@
            <tbody> 
             ~[tlist_sql;
                 select
-                    s.id,
+                    s.dcid,
                     s.lastfirst,
                     s.student_number,
                     fl.FLA_4_CO2,
@@ -248,7 +248,7 @@
     	            AND cc.sectionid = ~[gpv:sectionid]
     	        order by lastfirst asc;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
                <tr>
-                <td><a href="/teachers/studentpages/fl4.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+                <td><a href="/teachers/studentpages/fl4.html?sectionid=~[gpv:sectionid]&frn=001~(dcid)">~(lfname)</a></td>
                 <td>~(studentnum)</td>
                 <td>~(4_CO2)</td>
                 <td>~(4_CO5)</td>
@@ -307,7 +307,7 @@
            <tbody> 
             ~[tlist_sql;
                 select
-                    s.id,
+                    s.dcid,
                     s.lastfirst,
                     s.student_number,
                     fl.FLA_7_1,
@@ -336,7 +336,7 @@
     	        order by lastfirst asc
             ;alternatecolor;nonemessage=<div class="feedback-alert">Database query returned no results.</div>]
             <tr>
-              <td><a href="/teachers/studentpages/fl7.html?sectionid=~[gpv:sectionid]&frn=001~(id)">~(lfname)</a></td>
+              <td><a href="/teachers/studentpages/fl7.html?sectionid=~[gpv:sectionid]&frn=001~(dcid)">~(lfname)</a></td>
               <td>~(studentnum)</td>
               <td>~(7_1)</td>
               <td>~(7_2)</td>
